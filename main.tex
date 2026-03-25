@@ -1,0 +1,78 @@
+% DOCUMENTO
+\documentclass[13]{article}
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% font
+\usepackage{heuristica}
+\usepackage[heuristica,vvarbb,bigdelims]{newtxmath}
+\renewcommand*\oldstylenums[1]{\textosf{#1}}
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[a4paper,margin=1.7cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\setlength{\parskip}{2mm plus 0.5mm minus 1mm}
+
+% MATEMÁTICA
+\usepackage{amssymb,amsmath}
+\usepackage{booktabs}
+\usepackage[es-tabla]{babel}
+
+% REFERENCIAS
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[spanish,nameinlink]{cleveref}
+\crefname{table}{Tabla}{Tablas}
+\crefname{section}{sección}{secciones}
+\crefname{subsection}{subsección}{subsecciones}
+\crefname{equation}{ec.}{ecs.}
+
+% BIBLIOGRAFÍA
+\usepackage{biblatex} %Imports biblatex package
+\addbibresource{sample.bib} %Import the bibliography file
+\usepackage{csquotes}
+
+% FIGURAS
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfig}
+\floatplacement{figure}{h}
+\usepackage{chngcntr}
+% \counterwithin{figure}{section}
+\usepackage{placeins}
+\usepackage[justification=centering,labelfont=bf]{caption}
+
+
+\title{Estimación de la incertidumbre de medición}
+\author{Paula Martínez Garbino}
+
+\begin{document}
+\maketitle
+
+% \begin{abstract}
+% Your abstract.
+% \end{abstract}
+
+\section{Introducción}
+
+El resultado de una calibración sólo se encuentra completo cuando el valor medido es acompañado de su incertidumbre de medición junto a una declaración del factor de cobertura, intervalo de confianza y distribución de probabilidad. En este documento se resumen informalmente tanto el proceso general de evaluación de incertidumbre como el método empleado para distintas magnitudes bajo el alcance de AKRIMET, enunciando con sus referencias los modelos matemáticos y conceptos de estadística necesarios en cada caso. \cite{GUM}
+
+\section{Metodología general para la evaluación de incertidumbres}
+
+\input{metodologia}
+
+\section{Conceptos útiles}\label{sec:conceptos}
+
+\input{conceptos}
+
+\section{Temperatura}
+
+\input{temperatura}
+
+% \bibliographystyle{alpha}
+% \bibliography{sample}
+\printbibliography
+
+\end{document}
