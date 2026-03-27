@@ -6,7 +6,7 @@ A partir del método elegido para realizar las mediciones, el modelo físico del
 
 El siguiente paso es definir el \textbf{modelo matemático} teórico que relaciona al \textbf{mensurando} o determinación \textit{Y} con las magnitudes de entrada $X_i$ a través de una función
 \begin{equation}
-    Y = f(X_1,X_2, ..., X_n).
+    Y = f(X_1,X_2, \ldots, X_n).
     \label{eq:f}
 \end{equation}
 Las variables en mayúscula ($Y$, $X_i$) corresponden a las magnitudes "teóricas", mientras que las variables en minúscula ($y$, $x_i$) corresponden a los valores numéricos medidos o estimados de esas magnitudes al realizar mediciones.
@@ -47,7 +47,7 @@ En la \cref{fig:seno} vemos un ejemplo para el caso de una sola variable con una
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{ejemplo combinar.png}
-\caption{\label{fig:seno} Evaluar el modelo matemático en las mediciones $x_1$ y $x_2$ con sus intervalos resulta en intervalos de incertidumbre distintos para la magnitud de salida $y$.}
+\caption{\label{fig:seno}Evaluar el modelo matemático en las mediciones $x_1$ y $x_2$ con sus intervalos resulta en intervalos de incertidumbre distintos para la magnitud de salida $y$.}
 \end{figure}
 
 Mediante un desarrollo en serie de Taylor de $f$ a primer orden se llega a:
@@ -97,9 +97,7 @@ El coeficiente está tabulado y se busca en una tabla para dos colas como la \cr
 \renewcommand{\tablename}{Tabla}
 \setlength{\belowcaptionskip}{10pt} 
 
-\caption{Valores seleccionados de $t_p(\nu)$ de la distribución t de Student (GUM Tabla G.2).}
-\label{tabla:distribucion_t_final}
-
+\caption{\label{table:t-student}Valores seleccionados de $t_p(\nu)$ de la distribución t de Student (GUM Tabla G.2).}
 \begin{tabular}{@{}ccccc@{}}
 \toprule
 \textbf{Grados de libertad} & \multicolumn{4}{c}{\textbf{Fracción $p$ en porcentaje}} \\ \cmidrule(l){2-5} 
@@ -121,7 +119,6 @@ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 \addlinespace
 $\infty$ & \textbf{1,000} & \textbf{1,960} & \textbf{2,000} & \textbf{2,576} \\ \bottomrule
 \end{tabular}
-\label{table:t-student}
 \end{table}
 
 Como no se conocen los grados de libertad efectivos de la magnitud de salida se calcula su número de \textbf{grados de libertad efectivos} $\nu_{eff}$ con la fórmula de Welch-Satterthwaite

@@ -1,0 +1,7 @@
+{
+    "files.autoSave": "onFocusChange",
+    "latex-workshop.view.pdf.color.dark.backgroundColor": "#262626",
+    "latex-workshop.view.pdf.color.light.backgroundColor": "#262626",
+    "latex-workshop.view.pdf.color.dark.pageBorderColor": "#262626",
+    "latex-workshop.view.pdf.color.light.pageBorderColor": "#262626"
+}

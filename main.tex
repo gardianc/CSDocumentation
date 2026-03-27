@@ -1,5 +1,7 @@
 % DOCUMENTO
-\documentclass[13]{article}
+% !TEX root = relative/or/absolute/path/to/root/main.tex
+% !BIB program = biblatex
+\documentclass[12pt]{article}
 % Language setting
 % Replace `english' with e.g. `spanish' to change the document language
 \usepackage[spanish,es-tabla]{babel}
@@ -9,6 +11,7 @@
 \usepackage{heuristica}
 \usepackage[heuristica,vvarbb,bigdelims]{newtxmath}
 \renewcommand*\oldstylenums[1]{\textosf{#1}}
+\let\Bbbk\relax
 % Set page size and margins
 % Replace `letterpaper' with`a4paper' for UK/EU standard size
 \usepackage[a4paper,margin=1.7cm]{geometry}
@@ -50,15 +53,12 @@
 
 \begin{document}
 \maketitle
-
 % \begin{abstract}
 % Your abstract.
 % \end{abstract}
-
 \section{Introducción}
 
 El resultado de una calibración sólo se encuentra completo cuando el valor medido es acompañado de su incertidumbre de medición junto a una declaración del factor de cobertura, intervalo de confianza y distribución de probabilidad. En este documento se resumen informalmente tanto el proceso general de evaluación de incertidumbre como el método empleado para distintas magnitudes bajo el alcance de AKRIMET, enunciando con sus referencias los modelos matemáticos y conceptos de estadística necesarios en cada caso. \cite{GUM}
-
 \section{Metodología general para la evaluación de incertidumbres}
 
 \input{metodologia}
@@ -74,5 +74,4 @@ El resultado de una calibración sólo se encuentra completo cuando el valor med
 % \bibliographystyle{alpha}
 % \bibliography{sample}
 \printbibliography
-
 \end{document}
