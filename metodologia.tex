@@ -2,24 +2,41 @@ Cuando uno se dispone a realizar una medición existe un procedimiento uniforme 
 
 \subsection{Identificar}
 
-A partir del método elegido para realizar las mediciones, el modelo físico del \textbf{mensurando} y las determinaciones que se informarán se identifican y definen las variables de influencia y las fuentes o componentes de incertidumbre de la medición. Toda \textbf{variable de entrada} $x_i$ medida tiene una \textbf{incertidumbre típica} o estándar de entrada \textbf{asociada} $\sigma(x_i)$ o $u(x_i)$, que se debe poder evaluar y cuantificar.
+Por lo general un \textbf{mensurando} \textit{Y} no se mide directamente si no que se determina a partir de otras \textit{n} \textbf{magnitudes de entrada} $X_i$, que a su vez también pueden depender de otras magnitudes, junto con las correcciones y factores de corrección que apliquen. A partir del método elegido para realizar las mediciones y el modelo físico del mensurando deben identificarse y definirse todas estas variables de influencia, las fuentes o componentes de incertidumbre de la medición y las correcciones necesarias.
 
-El siguiente paso es definir el \textbf{modelo matemático} teórico que relaciona al \textbf{mensurando} o determinación \textit{Y} con las magnitudes de entrada $X_i$ a través de una función
+El siguiente paso es definir el \textbf{modelo matemático} teórico que relaciona al mensurando o determinación con las magnitudes de entrada $X_i$ a través de una relación funcional
 \begin{equation}
     Y = f(X_1,X_2, \ldots, X_n).
-    \label{eq:f}
+    \label{eq:funcion_f}
 \end{equation}
-Las variables en mayúscula ($Y$, $X_i$) corresponden a las magnitudes "teóricas", mientras que las variables en minúscula ($y$, $x_i$) corresponden a los valores numéricos medidos o estimados de esas magnitudes al realizar mediciones.
 
-La función matemática \textit{f} tiene en cuenta no sólo el modelo físico, si no que también incluye correcciones que son despreciables en el resultado pero sí son considerables en la incertidumbre.
+La función matemática \textit{f} tiene en cuenta no sólo el modelo físico, si no que también incluye correcciones y factores que son despreciables en el resultado de la medición pero sí son considerables en la incertidumbre.
 
 En el caso de calibraciones la determinación informada con mayor frecuencia en los certificados entregados es la \textbf{corrección} o error de indicación \textit{C}:
 \begin{equation}
     C = (\bar{x}_{ref} + Cc_{ref}) - (\bar{x}_{ubp} + Cc_{ubp}),
 \end{equation}
-donde $\bar{x}_{ref}$ y $\bar{x}_{ubp}$ son, respectivamente, el valor indicado en el patrón y en la unidad bajo prueba, promedio de una muestra de $n$ repeticiones en caso de instrumentos de lectura directa, y $Cc_{ref}$ y $Cc_{ubp}$ son las correcciones a esos valores (por certificado de calibración, interpolación, error de inmersión, etc., cuáles son dependerá del mensurando y el modelo).
+donde $\bar{x}_{ref}$ y $\bar{x}_{ubp}$ son, respectivamente, el valor indicado en el patrón y en la unidad bajo prueba, promedio de una muestra de $n$ repeticiones en caso de instrumentos de lectura directa. $Cc_{ref}$ y $Cc_{ubp}$ son las correcciones a esos valores cuáles son dependerá del mensurando y el modelo, por ejemplo en calibraciones de temperatura de contacto, como se verá en la \cref{sec:temperatura}, tanto $T_{ref}$ como $T_{ubp}$ perciben correcciones por polinomio interpolador y por temperatura ambiental.
 
-\subsection{Organizar y  cuantificar}
+El resultado de la medición o \textbf{estimación de salida} \textit{y} será la estimación del mensurando \textit{Y} que se obtiene al evaluar la \cref{eq:funcion_f} en las $n$ \textbf{estimaciones de entrada} $x_i$, los valores numéricos medidos o estimados de las magnitudes de entrada $X_i$
+
+\begin{equation}
+    y = f(x_1,x_2, \ldots , x_n).
+    \label{eq:estimacion_y}
+\end{equation}
+
+Toda estimación de entrada $x_i$ medida tendrá una \textbf{incertidumbre típica} o estándar asociada $\sigma(x_i)$ o $u(x_i)$, que se debe poder evaluar y cuantificar, ya que determinarán la incertidumbre de salida de la estimación $y$.
+
+En la \cref{fig:seno} vemos un ejemplo para el caso de una sola variable con una función senoidal $Y = f(X) = sen(X)$. Al evaluarlo en las mediciones $x_1$ o $x_2$ con sus repectivas incertidumbres $u(x_1)$ y $u(x_2)$ se introduce una incertidumbre en el resultado, que depende tanto de la estimación de los valores mismos como de su incertidumbre típica.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{ejemplo combinar.png}
+\caption{\label{fig:seno}Evaluar el modelo matemático en las mediciones $x_1$ y $x_2$ con sus intervalos resulta en intervalos de incertidumbre distintos para el resultado $y$.}
+\end{figure}
+
+\subsection{Organizar y cuantificar}
+
 Previo a realizar mediciones y evaluar la incertidumbre se organiza y clasifica la información sobre las magnitudes de entrada y su incertidumbre típica asociada. Cada incertidumbre típica se calculará como
 \begin{equation}
     \sigma(x_i) = \frac{\textit{componente de incertidumbre}}{\textit{factor de estandarización}}
@@ -28,27 +45,12 @@ una vez que se cuantifique el valor numérico de la componente de incertidumbre.
 
 El \textbf{factor de estandarización} es determinado por la forma y el ancho de la \textbf{distribución de probabilidad} de origen de la variable, es decir cómo se distribuye en una población y su probabilidad de estar dentro de un intervalo de valores.
 
-Las tres distribuciones que aparecen comúnmente son la \textbf{distribución normal} o gaussiana, la \textbf{distribución rectangular} o cuadrada y la \textbf{distribución triangular} (ver \cref{sec:conceptos}).
+Las tres distribuciones que aparecen comúnmente son la \textbf{distribución normal} o gaussiana, la \textbf{distribución uniforme} o rectangular y la \textbf{distribución triangular} (ver \cref{sec:conceptos}).
 
 Las incertidumbres típicas asociadas a cada variable se clasifican según la forma en que se estime su valor numérico. Las \textbf{incertidumbres de tipo A} son aquellas que se evalúan por métodos estadísticos (mediante un análisis estadístico de una serie de mediciones directas, ej. desviación estándar experimental), mientras que las \textbf{incertidumbres de tipo B} son las obtenidas por cualquier otro método que no sea el análisis estadístico (ej. incertidumbres conocidas por experiencias previas, certificados de calibración, especificaciones de fábrica, etc.).
 
-
-%Para cuantificar las incertidumbres típicas a partir de las mediciones $x_i$ entonces se aplican los criterios considerados previamente utilizando las herramientas matemáticas de probabilidad y estadística para obtener los valores estandarizados de incertidumbre para cada componente.
-
 \subsection{Combinar}
-El siguiente paso es calcular la \textbf{incertidumbre típica combinada} $u_c(y)$, la incertidumbre típica de la magnitud de salida $y$. $u_c(y)$ expresa cómo afecta la estimación de cada $x_i$ y su incertidumbres típicas $\sigma(x_i)$ al resultado de evaluarlos en la \cref{eq:f}
-\begin{equation}
-    y = f(x_1,x_2, ..., x_n),
-\end{equation}
-es decir a la estimación \textit{y} de la magnitud de salida \textit{Y}.
-
-En la \cref{fig:seno} vemos un ejemplo para el caso de una sola variable con una función senoidal $Y = f(X) = sen(X)$. Al evaluarlo en las mediciones $x_1$ o $x_2$ con sus repectivas incertidumbres $u(x_1)$ y $u(x_2)$ se introduce una incertidumbre en el resultado, que depende tanto de la estimación de los valores mismos como de su incertidumbre típica.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.6\textwidth]{ejemplo combinar.png}
-\caption{\label{fig:seno}Evaluar el modelo matemático en las mediciones $x_1$ y $x_2$ con sus intervalos resulta en intervalos de incertidumbre distintos para la magnitud de salida $y$.}
-\end{figure}
+Luego de realizar mediciones y cuantificar las variables $x_i$ y las incertidumbres típicas el siguiente paso es calcular la \textbf{incertidumbre típica combinada} $u_c(y)$, la incertidumbre típica de la magnitud de salida $y$ (\cref{eq:estima}). 
 
 Mediante un desarrollo en serie de Taylor de $f$ a primer orden se llega a:
 \begin{equation}
@@ -70,12 +72,15 @@ Para el ejemplo anterior de la corrección,
     c_{ubp} = -1.
 \end{split}
 \end{equation}
-%Para componentes de incertidumbre correlacionadas se calcula con la ecuación
-%\begin{equation}
-%    u_c(y) = \sqrt{\sum_{i} c_i^2 \cdot u^2(x_i) + 2 \sum_{i} \sum_{j} c_i \, c_j \, u(x_i) \, u(x_j) \, r(x_i, x_j)}
-%\end{equation},
-
-%donde $r(x_i,x_j)$ es el coeficiente de correlación, tal que $r(x_i,x_j) = r(x_j,x_i)$ y  $-1 \leq r \leq 1$.
+Para componentes de incertidumbre correlacionadas se calcula con la ecuación
+\begin{equation}
+   u_c(y) = \sqrt{\sum_{i} c_i^2 \cdot u^2(x_i) + 2 \sum_{i} \sum_{j} c_i \, c_j \, u(x_i) \, u(x_j) \, r(x_i, x_j)},
+\end{equation}
+donde
+\begin{equation}
+    r(x_i,x_j) = \frac{u(x_i,x_j)}{u(x_i)u(x_j)}
+\end{equation}
+es el \textbf{coeficiente de correlación} ($u(x_i,x_j)$ es la covarianza estimada asociada a $x_i$ y $x_j$) tal que $r(x_i,x_j) = r(x_j,x_i)$ y  $-1 \leq r \leq 1$.
 
 \subsection{Expandir}
 Para satisfacer las necesidades de determinadas aplicaciones industriales y comerciales, así como las exigencias de los campos de la salud y la seguridad, la incertidumbre típica combinada $u_c$ se multiplica por un factor de cobertura \textit{k}, obteniéndose la denominada \textbf{incertidumbre expandida} \textit{U}.

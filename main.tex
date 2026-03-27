@@ -8,6 +8,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 % font
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
 \usepackage{heuristica}
 \usepackage[heuristica,vvarbb,bigdelims]{newtxmath}
 \renewcommand*\oldstylenums[1]{\textosf{#1}}
@@ -58,7 +60,8 @@
 % \end{abstract}
 \section{Introducción}
 
-El resultado de una calibración sólo se encuentra completo cuando el valor medido es acompañado de su incertidumbre de medición junto a una declaración del factor de cobertura, intervalo de confianza y distribución de probabilidad. En este documento se resumen informalmente tanto el proceso general de evaluación de incertidumbre como el método empleado para distintas magnitudes bajo el alcance de AKRIMET, enunciando con sus referencias los modelos matemáticos y conceptos de estadística necesarios en cada caso. \cite{GUM}
+El resultado de una calibración sólo se encuentra completo cuando el valor medido es acompañado de su incertidumbre de medición junto a una declaración del factor de cobertura, intervalo de confianza y distribución de probabilidad. En este documento se resumen informalmente tanto el proceso general de evaluación de incertidumbre como el método empleado para distintas magnitudes bajo el alcance de AKRIMET, enunciando con sus referencias los modelos matemáticos y conceptos de estadística necesarios en cada caso.\cite{GUM}
+
 \section{Metodología general para la evaluación de incertidumbres}
 
 \input{metodologia}
@@ -67,7 +70,7 @@ El resultado de una calibración sólo se encuentra completo cuando el valor med
 
 \input{conceptos}
 
-\section{Temperatura}
+\section{Temperatura}\label{sec:temperatura}
 
 \input{temperatura}
 
