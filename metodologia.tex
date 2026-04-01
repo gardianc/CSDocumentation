@@ -29,10 +29,10 @@ Toda estimación de entrada $x_i$ medida tendrá una \textbf{incertidumbre típi
 
 En la \cref{fig:seno} vemos un ejemplo para el caso de una sola variable con una función senoidal $Y = f(X) = sen(X)$. Al evaluarlo en las mediciones $x_1$ o $x_2$ con sus repectivas incertidumbres $u(x_1)$ y $u(x_2)$ se introduce una incertidumbre en el resultado, que depende tanto de la estimación de los valores mismos como de su incertidumbre típica.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.6\textwidth]{ejemplo combinar.png}
-\caption{\label{fig:seno}Evaluar el modelo matemático en las mediciones $x_1$ y $x_2$ con sus intervalos resulta en intervalos de incertidumbre distintos para el resultado $y$.}
+    \caption{\label{fig:seno}Evaluar el modelo matemático en las mediciones $x_1$ y $x_2$ con sus intervalos resulta en intervalos de incertidumbre distintos para el resultado $y$.}
 \end{figure}
 
 \subsection{Organizar y cuantificar}
@@ -47,10 +47,10 @@ El \textbf{factor de estandarización} es determinado por la forma y el ancho de
 
 Las tres distribuciones que aparecen comúnmente son la \textbf{distribución normal} o gaussiana, la \textbf{distribución uniforme} o rectangular y la \textbf{distribución triangular} (ver \cref{sec:conceptos}).
 
-Las incertidumbres típicas asociadas a cada variable se clasifican según la forma en que se estime su valor numérico. Las \textbf{incertidumbres de tipo A} son aquellas que se evalúan por métodos estadísticos (mediante un análisis estadístico de una serie de mediciones directas, ej. desviación estándar experimental), mientras que las \textbf{incertidumbres de tipo B} son las obtenidas por cualquier otro método que no sea el análisis estadístico (ej. incertidumbres conocidas por experiencias previas, certificados de calibración, especificaciones de fábrica, etc.).
+Las incertidumbres típicas asociadas a cada variable se clasifican según la forma en que se estime su valor numérico. Las \textbf{incertidumbres de tipo A} son aquellas que se evalúan por métodos estadísticos (mediante un análisis estadístico de una serie de mediciones directas, ej.\ desviación estándar experimental), mientras que las \textbf{incertidumbres de tipo B} son las obtenidas por cualquier otro método que no sea el análisis estadístico (ej.\ incertidumbres conocidas por experiencias previas, certificados de calibración, especificaciones de fábrica, etc.).
 
 \subsection{Combinar}
-Luego de realizar mediciones y cuantificar las variables $x_i$ y las incertidumbres típicas el siguiente paso es calcular la \textbf{incertidumbre típica combinada} $u_c(y)$, la incertidumbre típica de la magnitud de salida $y$ (\cref{eq:estima}). 
+Luego de realizar mediciones y cuantificar las variables $x_i$ y las incertidumbres típicas el siguiente paso es calcular la \textbf{incertidumbre típica combinada} $u_c(y)$, la incertidumbre típica de la magnitud de salida $y$ (\cref{eq:estimacion_y}). 
 
 Mediante un desarrollo en serie de Taylor de $f$ a primer orden se llega a:
 \begin{equation}
