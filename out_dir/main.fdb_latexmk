@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber out_dir/main"] 1774619244.28334 "out_dir/main.bcf" "out_dir/main.bbl" "out_dir/main" 1774633644.96602 0
-  "out_dir/main.bcf" 1774633644 108605 2009f6e7e220a21ca999fcfd1125f1e8 "pdflatex"
+["biber out_dir/main"] 1774619244.28334 "out_dir/main.bcf" "out_dir/main.bbl" "out_dir/main" 1774966520.84736 0
+  "out_dir/main.bcf" 1774966520 108605 2009f6e7e220a21ca999fcfd1125f1e8 "pdflatex"
   "sample.bib" 1774614859 466 39c3959902581e2e9d222976347de973 ""
   (generated)
   "out_dir/main.bbl"
   "out_dir/main.blg"
   (rewritten before read)
-["pdflatex"] 1774633637.6441 "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/main.tex" "out_dir/main.pdf" "main" 1774633644.96729 0
+["pdflatex"] 1774966509.22775 "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/main.tex" "out_dir/main.pdf" "main" 1774966520.84826 0
   "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/main.tex" 1774630433 2499 984de0b30ca29773c49349610c01a1fe ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/heuristica/zut_geqeyh.enc" 1774459326 2929 14456efeb01c40f0951239ec36737870 ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1774458852 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -181,14 +181,14 @@
   "c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1774543758 5619402 045890036aad9b52b154ef5568e59d3a ""
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774543970 3636407 fffcb39022005cdc86b53aafd9fb4919 ""
   "c:/texlive/2026/texmf.cnf" 1774530597 713 e69b156964470283e0530f5060668171 ""
-  "conceptos.tex" 1774633636 1936 16895a121937b55b899862f61bf384b5 ""
+  "conceptos.tex" 1774966506 1937 ef173131d25f94a45e83150e95c1b644 ""
   "ejemplo combinar.png" 1774449798 2263156 68f133640f6318387f7025d83efa92d5 ""
   "main.tex" 1774630433 2499 984de0b30ca29773c49349610c01a1fe ""
   "metodologia.tex" 1774632914 10783 c87b32ce082f72bf812e7bff55d2653d ""
-  "out_dir/main.aux" 1774633644 3414 8685983c27b48a16ae69bb9d99a01c2c "pdflatex"
+  "out_dir/main.aux" 1774966520 3414 8685983c27b48a16ae69bb9d99a01c2c "pdflatex"
   "out_dir/main.bbl" 1774619246 1748 819d7d993cca49867aeff607f6cec4e1 "biber out_dir/main"
-  "out_dir/main.out" 1774633644 1733 a3346f8df01c6828ae98faa215e4b331 "pdflatex"
-  "out_dir/main.run.xml" 1774633644 2301 aeb72638caef96b2b62108dc5a863e9c "pdflatex"
+  "out_dir/main.out" 1774966520 1733 a3346f8df01c6828ae98faa215e4b331 "pdflatex"
+  "out_dir/main.run.xml" 1774966520 2301 aeb72638caef96b2b62108dc5a863e9c "pdflatex"
   "temperatura.tex" 1774449798 71 514a3242859e35c6d4fb11842d1ed211 ""
   (generated)
   "out_dir/main.aux"
