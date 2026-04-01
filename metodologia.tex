@@ -29,7 +29,7 @@ Toda estimación de entrada $x_i$ medida tendrá una \textbf{incertidumbre típi
 
 En la \cref{fig:seno} vemos un ejemplo para el caso de una sola variable con una función senoidal $Y = f(X) = sen(X)$. Al evaluarlo en las mediciones $x_1$ o $x_2$ con sus repectivas incertidumbres $u(x_1)$ y $u(x_2)$ se introduce una incertidumbre en el resultado, que depende tanto de la estimación de los valores mismos como de su incertidumbre típica.
 
-\begin{figure}[!ht]
+\begin{figure}[!htb]
     \centering
     \includegraphics[width=0.6\textwidth]{ejemplo combinar.png}
     \caption{\label{fig:seno}Evaluar el modelo matemático en las mediciones $x_1$ y $x_2$ con sus intervalos resulta en intervalos de incertidumbre distintos para el resultado $y$.}
@@ -54,7 +54,7 @@ Luego de realizar mediciones y cuantificar las variables $x_i$ y las incertidumb
 
 Mediante un desarrollo en serie de Taylor de $f$ a primer orden se llega a:
 \begin{equation}
-    u_c(y)  = \sqrt{\sum_{i = 1}^N\left(\frac{\partial f}{\partial X_i}\right)^2\Bigg\rvert_{x_i} \sigma^2(x_i)} = \sum_{i = 1}^N c_i^2 \sigma^2(x_i)
+    u_c(y)  = \sqrt{\sum_{i = 1}^N{\left({\frac{\partial f}{\partial X_i}}\right)}^2\Bigg\rvert_{x_i} \sigma^2(x_i)} = \sum_{i = 1}^N c_i^2 \sigma^2(x_i)
 \end{equation}
 donde
 \begin{equation}
@@ -96,7 +96,13 @@ El valor de \textit{k} necesario para un cierto intervalo depende de la forma de
 donde $t_p(\nu)$ es el coeficiente para un nivel de confianza \textit{p} de la distribución t de Student de $\nu$ grados de libertad. 
 El coeficiente está tabulado y se busca en una tabla para dos colas como la \cref{table:t-student}, teniendo en cuenta que la forma de la distribución t de Student depende de los grados de libertad de la magnitud de salida.
 
-\begin{table}[h!]
+Como no se conocen los grados de libertad efectivos de la magnitud de salida se calcula su número de \textbf{grados de libertad efectivos} $\nu_{eff}$ con la fórmula de Welch-Satterthwaite
+\begin{equation}
+    \nu_{eff} = \frac{u_c^4(y)}{\sum_{i=1}^{N} \dfrac{\sigma_i^4}{\nu_i}},
+\end{equation}
+donde $u_c(y)$ es la incertidumbre típica combinada, $\sigma_i$ la incertidumbre típica de cada componente y $\nu_i$ los grados de libertad de cada componente. Para buscar en la tabla se trunca $\nu_{eff}$ al entero inferior más próximo.
+
+\begin{table}[!htb]
 \centering
 % Comandos para el nombre y el espacio (sin paquetes externos)
 \renewcommand{\tablename}{Tabla}
@@ -125,12 +131,6 @@ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 $\infty$ & \textbf{1,000} & \textbf{1,960} & \textbf{2,000} & \textbf{2,576} \\ \bottomrule
 \end{tabular}
 \end{table}
-
-Como no se conocen los grados de libertad efectivos de la magnitud de salida se calcula su número de \textbf{grados de libertad efectivos} $\nu_{eff}$ con la fórmula de Welch-Satterthwaite
-\begin{equation}
-    \nu_{eff} = \frac{u_c^4(y)}{\sum_{i=1}^{N} \dfrac{\sigma_i^4}{\nu_i}},
-\end{equation}
-donde $u_c(y)$ es la incertidumbre típica combinada, $\sigma_i$ la incertidumbre típica de cada componente y $\nu_i$ los grados de libertad de cada componente. Para buscar en la tabla se trunca $\nu_{eff}$ al entero inferior más próximo.
 
 El número de grados de libertad para incertidumbres de tipo A es $\nu = n - m$ donde \textit{n} es el número de observaciones y \textit{m} el número de parámetros involucrados en la estimación. Para el caso de estimar una única magnitud a partir de \textit{n} observaciones los grados de libertad son $\nu = n - 1$, mientras que para un ajuste lineal por mínimos cuadrados $\nu = n - 2$ (dos coeficientes, \textit{m} y \textit{b}). Para incertidumbres de tipo B los grados de libertad son infinitos, aunque en la práctica basta con asumir $\nu_i = 100$.
 

@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber out_dir/main"] 1774619244.28334 "out_dir/main.bcf" "out_dir/main.bbl" "out_dir/main" 1775046637.58921 0
-  "out_dir/main.bcf" 1775046637 108605 2009f6e7e220a21ca999fcfd1125f1e8 "pdflatex"
+["biber out_dir/main"] 1774619244.28334 "out_dir/main.bcf" "out_dir/main.bbl" "out_dir/main" 1775047042.75153 0
+  "out_dir/main.bcf" 1775047042 108605 2009f6e7e220a21ca999fcfd1125f1e8 "pdflatex"
   "sample.bib" 1774614859 466 39c3959902581e2e9d222976347de973 ""
   (generated)
   "out_dir/main.bbl"
   "out_dir/main.blg"
   (rewritten before read)
-["pdflatex"] 1775046631.90873 "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/main.tex" "out_dir/main.pdf" "main" 1775046637.5901 0
+["pdflatex"] 1775047037.10216 "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/main.tex" "out_dir/main.pdf" "main" 1775047042.75234 0
   "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/main.tex" 1775046038 2313 79440d2adf4b79f4573f24c78f5755ea ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1774525694 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1774525694 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -151,11 +151,11 @@
   "conceptos.tex" 1775045416 1940 4ad3909bfdfdd55068cca1a2e8730dd4 ""
   "ejemplo combinar.png" 1774449798 2263156 68f133640f6318387f7025d83efa92d5 ""
   "main.tex" 1775046038 2313 79440d2adf4b79f4573f24c78f5755ea ""
-  "metodologia.tex" 1775046630 10797 8f7e2fb8e3d23bfc603b5f0f86e5086d ""
-  "out_dir/main.aux" 1775046637 3414 8685983c27b48a16ae69bb9d99a01c2c "pdflatex"
+  "metodologia.tex" 1775047038 10804 4f9528bb5a32a5bfcd0abf0e7ce97688 ""
+  "out_dir/main.aux" 1775047042 3414 8685983c27b48a16ae69bb9d99a01c2c "pdflatex"
   "out_dir/main.bbl" 1774619246 1748 819d7d993cca49867aeff607f6cec4e1 "biber out_dir/main"
-  "out_dir/main.out" 1775046637 1733 a3346f8df01c6828ae98faa215e4b331 "pdflatex"
-  "out_dir/main.run.xml" 1775046637 2301 aeb72638caef96b2b62108dc5a863e9c "pdflatex"
+  "out_dir/main.out" 1775047042 1733 a3346f8df01c6828ae98faa215e4b331 "pdflatex"
+  "out_dir/main.run.xml" 1775047042 2301 aeb72638caef96b2b62108dc5a863e9c "pdflatex"
   "temperatura.tex" 1774449798 71 514a3242859e35c6d4fb11842d1ed211 ""
   (generated)
   "out_dir/main.aux"

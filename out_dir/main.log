@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.26)  1 APR 2026 09:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.26)  1 APR 2026 09:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -794,11 +794,7 @@ File: ejemplo combinar.png Graphic file (type png)
 <use ejemplo combinar.png>
 Package pdftex.def Info: ejemplo combinar.png  used on input line 34.
 (pdftex.def)             Requested size: 300.46428pt x 158.78178pt.
- [2{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./ejemplo combinar.png>] [3{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4]) (./conceptos.tex [5]) (./temperatura.tex) [6] (out_dir/main.aux
+ [2{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./ejemplo combinar.png>] [3{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [4]) (./conceptos.tex [5]) (./temperatura.tex) [6] (out_dir/main.aux
 LaTeX Info: Redefining \sptext on input line 14.
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
@@ -823,7 +819,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,18n,79p,757b,2136s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on out_dir/main.pdf (6 pages, 1528274 bytes).
+Output written on out_dir/main.pdf (6 pages, 1528280 bytes).
 PDF statistics:
  181 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams
