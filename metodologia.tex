@@ -16,9 +16,9 @@ En el caso de calibraciones la determinación informada con mayor frecuencia en 
 \begin{equation}
     C = (\bar{x}_{ref} + Cc_{ref}) - (\bar{x}_{ubp} + Cc_{ubp}),
 \end{equation}
-donde $\bar{x}_{ref}$ y $\bar{x}_{ubp}$ son, respectivamente, el valor indicado en el patrón y en la unidad bajo prueba, promedio de una muestra de $n$ repeticiones en caso de instrumentos de lectura directa. $Cc_{ref}$ y $Cc_{ubp}$ son las correcciones a esos valores cuáles son dependerá del mensurando y el modelo, por ejemplo en calibraciones de temperatura de contacto, como se verá en la \cref{sec:temperatura}, tanto $T_{ref}$ como $T_{ubp}$ perciben correcciones por polinomio interpolador y por temperatura ambiental.
+donde $\bar{x}_{ref}$ y $\bar{x}_{ubp}$ son, respectivamente, el valor de referencia del patrón y el valor medido en la unidad bajo prueba, promedio de una muestra de $n$ repeticiones en caso de instrumentos de lectura directa y $Cc_{ref}$ y $Cc_{ubp}$ son las correcciones a esos valores. Cuáles son dependerá del mensurando y el modelo (por ejemplo en calibraciones de temperatura de contacto, como se verá en la \cref{sec:temperatura}, tanto $T_{ref}$ como $T_{ubp}$ perciben correcciones por polinomio interpolador y por temperatura ambiental).
 
-El resultado de la medición o \textbf{estimación de salida} \textit{y} será la estimación del mensurando \textit{Y} que se obtiene al evaluar la \cref{eq:funcion_f} en las $n$ \textbf{estimaciones de entrada} $x_i$, los valores numéricos medidos o estimados de las magnitudes de entrada $X_i$
+El \textbf{resultado de la medición} o \textbf{estimación de salida} \textit{y} será la estimación del mensurando \textit{Y} que se obtiene al evaluar la \cref{eq:funcion_f} en las $n$ \textbf{estimaciones de entrada} $x_i$, los valores numéricos medidos o estimados de las magnitudes de entrada $X_i$
 
 \begin{equation}
     y = f(x_1,x_2, \ldots , x_n).
@@ -31,7 +31,7 @@ En la \cref{fig:seno} vemos un ejemplo para el caso de una sola variable con una
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=0.6\textwidth]{ejemplo combinar.png}
+    \includegraphics[width=0.6\textwidth]{figures/ejemplo combinar.png}
     \caption{\label{fig:seno}Evaluar el modelo matemático en las mediciones $x_1$ y $x_2$ con sus intervalos resulta en intervalos de incertidumbre distintos para el resultado $y$.}
 \end{figure}
 
@@ -45,7 +45,7 @@ una vez que se cuantifique el valor numérico de la componente de incertidumbre.
 
 El \textbf{factor de estandarización} es determinado por la forma y el ancho de la \textbf{distribución de probabilidad} de origen de la variable, es decir cómo se distribuye en una población y su probabilidad de estar dentro de un intervalo de valores.
 
-Las tres distribuciones que aparecen comúnmente son la \textbf{distribución normal} o gaussiana, la \textbf{distribución uniforme} o rectangular y la \textbf{distribución triangular} (ver \cref{sec:conceptos}).
+Las tres distribuciones que aparecen comúnmente son la \textbf{distribución normal}, la \textbf{distribución uniforme} y la \textbf{distribución triangular} (ver \cref{sec:distribuciones}).
 
 Las incertidumbres típicas asociadas a cada variable se clasifican según la forma en que se estime su valor numérico. Las \textbf{incertidumbres de tipo A} son aquellas que se evalúan por métodos estadísticos (mediante un análisis estadístico de una serie de mediciones directas, ej.\ desviación estándar experimental), mientras que las \textbf{incertidumbres de tipo B} son las obtenidas por cualquier otro método que no sea el análisis estadístico (ej.\ incertidumbres conocidas por experiencias previas, certificados de calibración, especificaciones de fábrica, etc.).
 
@@ -80,16 +80,28 @@ donde
 \begin{equation}
     r(x_i,x_j) = \frac{u(x_i,x_j)}{u(x_i)u(x_j)}
 \end{equation}
-es el \textbf{coeficiente de correlación} ($u(x_i,x_j)$ es la covarianza estimada asociada a $x_i$ y $x_j$) tal que $r(x_i,x_j) = r(x_j,x_i)$ y  $-1 \leq r \leq 1$.
+es el \textbf{coeficiente de correlación} tal que $r(x_i,x_j) = r(x_j,x_i)$ y  $-1 \leq r \leq 1$. $u(x_i,x_j)$ es la covarianza estimada asociada a $x_i$ y $x_j$.
 
 \subsection{Expandir}
 Para satisfacer las necesidades de determinadas aplicaciones industriales y comerciales, así como las exigencias de los campos de la salud y la seguridad, la incertidumbre típica combinada $u_c$ se multiplica por un factor de cobertura \textit{k}, obteniéndose la denominada \textbf{incertidumbre expandida} \textit{U}.
 \begin{equation}
     U(y) = k\,.u_c(y)
 \end{equation}
-La incertidumbre combinada tiene un \textbf{nivel de confianza} del 68,27\%. El nivel de confianza es la probabilidad de que el intervalo de confianza $(y-u_c(y),y+u_c(y))$ contenga el valor verdadero. Se multiplica $u_c$ por $k$ para reportar el resultado con el nivel de confianza requerido, usualmente 95\%.
+La incertidumbre combinada tiene un \textbf{nivel de confianza} del 68,27\%, asumiendo una distribución normal. El nivel de confianza es la probabilidad de que el \textbf{intervalo de confianza} $(y-u_c(y),y+u_c(y))$ contenga el valor verdadero. Se multiplica $u_c$ por $k$ para reportar el resultado con el nivel de confianza requerido, usualmente 95\%. 
 
-El valor de \textit{k} necesario para un cierto intervalo depende de la forma de la distribución (PONER EJ). Como no se conoce la distribución de la estimación de incertidumbre, o se realiza en base a pocas mediciones y no se puede afirmar con seguridad su distribución sin un cálculo extenso de combinar las distribuciones de probabilidad de las distintas variables de influencia, se acepta aproximar la distribución de salida por la \textbf{distribución t de Student}. Esto permite obtener una estimación confiable de la incertidumbre expandida con un $k_p$ equivalente:
+El valor de \textit{k} exacto necesario para asegurar un cierto intervalo de confianza depende de la forma de la distribución, ya que el área bajo la curva puede variar. En la \cref{fig:k_normal} se señala con distintos colores los intervalos de confianza para distintos valores de \textit{k} en el caso de la distribución normal.
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/k cobertura_normal.png}
+    \caption{\label{fig:k_normal}Intervalos y niveles de confianza para $k = 1, 2$ y 3 en el caso de una distribución normal centrada en $\mu = 0$.}
+\end{figure}
+
+Un intervalo de confianza $(\mu\pm\sigma)$ (área verde) corresponde a una probabilidad $P(\mu-\sigma<x<\mu+\sigma) \approx 0.683$ de que el valor verdadero se encuentre en ese intervalo, un intervalo $(\mu\pm 2\sigma)$ (área amarilla) corresponde a una probablidad $P(\mu-2\sigma<x<\mu+2\sigma) \approx 0.955$ y un intervalo $(\mu\pm 3\sigma)$ (área roja) corresponde a una probabilidad $P(\mu-3\sigma<x<\mu+3\sigma) \approx 0.997$.
+
+El factor de cobertura que reportemos para asegurar un cierto intervalo de confianza en el certificado de calibración dependerá entonces de la forma de la distribución de la magnitud de salida.
+
+En general esta distribución no se conoce porque resulta de la combinación de las distribuciones de probabilidad de todas las magnitudes de entrada, lo que requiere un amplio conocimiento de cada una de ellas y cálculos extensos de combinación de distribuciones. Se acepta entonces aproximar la distribución de salida por la \textbf{distribución t de Student} (justificado por el Teorema Central del Límite). Esto permite obtener una estimación confiable de la incertidumbre expandida con un $k_p$ equivalente:
 \begin{equation}
     U(y) = k_p\,.u_c(y) = t_p(\nu)\,.u_c(y)
 \end{equation}

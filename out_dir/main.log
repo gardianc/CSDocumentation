@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.26)  1 APR 2026 09:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.26)  7 APR 2026 14:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -789,12 +789,35 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [1
 
 {c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-<ejemplo combinar.png, id=67, 2856.6725pt x 1509.64pt>
-File: ejemplo combinar.png Graphic file (type png)
-<use ejemplo combinar.png>
-Package pdftex.def Info: ejemplo combinar.png  used on input line 34.
+<figures/ejemplo combinar.png, id=71, 2856.6725pt x 1509.64pt>
+File: figures/ejemplo combinar.png Graphic file (type png)
+<use figures/ejemplo combinar.png>
+Package pdftex.def Info: figures/ejemplo combinar.png  used on input line 34.
 (pdftex.def)             Requested size: 300.46428pt x 158.78178pt.
- [2{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./ejemplo combinar.png>] [3{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [4]) (./conceptos.tex [5]) (./temperatura.tex) [6] (out_dir/main.aux
+ [2{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./figures/ejemplo combinar.png>] [3{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+<figures/k cobertura_normal.png, id=95, 2585.66pt x 1670.24pt>
+File: figures/k cobertura_normal.png Graphic file (type png)
+<use figures/k cobertura_normal.png>
+Package pdftex.def Info: figures/k cobertura_normal.png  used on input line 96.
+(pdftex.def)             Requested size: 300.46428pt x 194.07419pt.
+ [4 <./figures/k cobertura_normal.png>]) (./conceptos.tex [5] [6]
+<figures/normal pdf.png, id=120, 2780.3875pt x 1541.76pt>
+File: figures/normal pdf.png Graphic file (type png)
+<use figures/normal pdf.png>
+Package pdftex.def Info: figures/normal pdf.png  used on input line 43.
+(pdftex.def)             Requested size: 300.46428pt x 166.6064pt.
+<figures/rectangular pdf.png, id=121, 2746.26pt x 1573.88pt>
+File: figures/rectangular pdf.png Graphic file (type png)
+<use figures/rectangular pdf.png>
+Package pdftex.def Info: figures/rectangular pdf.png  used on input line 61.
+(pdftex.def)             Requested size: 300.46428pt x 172.19073pt.
+ [7 <./figures/normal pdf.png>]
+<figures/triangular pdf.png, id=135, 2822.545pt x 1541.76pt>
+File: figures/triangular pdf.png Graphic file (type png)
+<use figures/triangular pdf.png>
+Package pdftex.def Info: figures/triangular pdf.png  used on input line 72.
+(pdftex.def)             Requested size: 300.46428pt x 164.11272pt.
+) (./temperatura.tex) [8 <./figures/rectangular pdf.png> <./figures/triangular pdf.png>] (out_dir/main.aux
 LaTeX Info: Redefining \sptext on input line 14.
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
@@ -805,24 +828,24 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A3346F8DF01C6828AE98FAA215E4B331;1733.
+(rerunfilecheck)             Checksum: EFB3ABEC42B231F14FD6156D15604412;1957.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23295 strings out of 467525
- 412487 string characters out of 5423209
- 1274769 words of memory out of 5000000
- 51892 multiletter control sequences out of 15000+600000
+ 23348 strings out of 467525
+ 413902 string characters out of 5423209
+ 1277210 words of memory out of 5000000
+ 51936 multiletter control sequences out of 15000+600000
  692888 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,18n,79p,757b,2136s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on out_dir/main.pdf (6 pages, 1528280 bytes).
+<c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on out_dir/main.pdf (8 pages, 5399822 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 94 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

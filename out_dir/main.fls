@@ -281,22 +281,42 @@ INPUT c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
-INPUT ./ejemplo combinar.png
-INPUT ./ejemplo combinar.png
-INPUT ./ejemplo combinar.png
-INPUT ./ejemplo combinar.png
-INPUT ./ejemplo combinar.png
+INPUT ./figures/ejemplo combinar.png
+INPUT ./figures/ejemplo combinar.png
+INPUT ./figures/ejemplo combinar.png
+INPUT ./figures/ejemplo combinar.png
+INPUT ./figures/ejemplo combinar.png
 INPUT c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/lm/ec-lmri8.tfm
 INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/lm/ec-lmri7.tfm
 INPUT c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
+INPUT ./figures/k cobertura_normal.png
+INPUT ./figures/k cobertura_normal.png
+INPUT ./figures/k cobertura_normal.png
+INPUT ./figures/k cobertura_normal.png
+INPUT ./figures/k cobertura_normal.png
 INPUT ./conceptos.tex
 INPUT ./conceptos.tex
 INPUT ./conceptos.tex
 INPUT ./conceptos.tex
 INPUT conceptos.tex
+INPUT ./figures/normal pdf.png
+INPUT ./figures/normal pdf.png
+INPUT ./figures/normal pdf.png
+INPUT ./figures/normal pdf.png
+INPUT ./figures/normal pdf.png
+INPUT ./figures/rectangular pdf.png
+INPUT ./figures/rectangular pdf.png
+INPUT ./figures/rectangular pdf.png
+INPUT ./figures/rectangular pdf.png
+INPUT ./figures/rectangular pdf.png
+INPUT ./figures/triangular pdf.png
+INPUT ./figures/triangular pdf.png
+INPUT ./figures/triangular pdf.png
+INPUT ./figures/triangular pdf.png
+INPUT ./figures/triangular pdf.png
 INPUT ./temperatura.tex
 INPUT ./temperatura.tex
 INPUT ./temperatura.tex
@@ -314,7 +334,9 @@ INPUT c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
 INPUT c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr17.pfb
+INPUT c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb
 INPUT c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri12.pfb
 INPUT c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
+INPUT c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy6.pfb
 INPUT c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
