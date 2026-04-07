@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber out_dir/main"] 1775569363.37286 "out_dir/main.bcf" "out_dir/main.bbl" "out_dir/main" 1775582715.847 0
-  "out_dir/main.bcf" 1775582715 108605 2009f6e7e220a21ca999fcfd1125f1e8 "pdflatex"
+["biber out_dir/main"] 1775569363.37286 "out_dir/main.bcf" "out_dir/main.bbl" "out_dir/main" 1775582834.65457 0
+  "out_dir/main.bcf" 1775582834 108605 2009f6e7e220a21ca999fcfd1125f1e8 "pdflatex"
   "sample.bib" 1774614859 466 39c3959902581e2e9d222976347de973 ""
   (generated)
   "out_dir/main.bbl"
   "out_dir/main.blg"
   (rewritten before read)
-["pdflatex"] 1775582695.38672 "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/main.tex" "out_dir/main.pdf" "main" 1775582715.84788 0
+["pdflatex"] 1775582814.25305 "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/main.tex" "out_dir/main.pdf" "main" 1775582834.65541 0
   "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/main.tex" 1775569353 2292 8ea71e81d5e80379ff2313e8ae83f8f2 ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1774525694 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1774525694 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -150,7 +150,7 @@
   "c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1774543758 5619402 045890036aad9b52b154ef5568e59d3a ""
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774543970 3636407 fffcb39022005cdc86b53aafd9fb4919 ""
   "c:/texlive/2026/texmf.cnf" 1774530597 713 e69b156964470283e0530f5060668171 ""
-  "conceptos.tex" 1775582694 4968 6b1dbd96047fa74feff2722ca128912d ""
+  "conceptos.tex" 1775582817 4959 aebf3ab038ef9bc904104959ee64a373 ""
   "figures/ejemplo combinar.png" 1774449798 2263156 68f133640f6318387f7025d83efa92d5 ""
   "figures/k cobertura_normal.png" 1775567592 2387505 8d779ed540b66a6acfedc93817a48625 ""
   "figures/normal pdf.png" 1775574411 593992 2c200680605a1968a8321e0b89647f32 ""
@@ -158,10 +158,10 @@
   "figures/triangular pdf.png" 1775582168 2618294 8177e9c888070779bdc6e229dbd7b5fe ""
   "main.tex" 1775569353 2292 8ea71e81d5e80379ff2313e8ae83f8f2 ""
   "metodologia.tex" 1775568668 12050 3a80806f02ee3a5b89030a444d1d1675 ""
-  "out_dir/main.aux" 1775582715 4872 7912cc758b28faf7bddac129ec936907 "pdflatex"
+  "out_dir/main.aux" 1775582834 4872 7912cc758b28faf7bddac129ec936907 "pdflatex"
   "out_dir/main.bbl" 1775569378 1748 819d7d993cca49867aeff607f6cec4e1 "biber out_dir/main"
-  "out_dir/main.out" 1775582715 1957 efb3abec42b231f14fd6156d15604412 "pdflatex"
-  "out_dir/main.run.xml" 1775582715 2301 aeb72638caef96b2b62108dc5a863e9c "pdflatex"
+  "out_dir/main.out" 1775582834 1957 efb3abec42b231f14fd6156d15604412 "pdflatex"
+  "out_dir/main.run.xml" 1775582834 2301 aeb72638caef96b2b62108dc5a863e9c "pdflatex"
   "temperatura.tex" 1774449798 71 514a3242859e35c6d4fb11842d1ed211 ""
   (generated)
   "out_dir/main.aux"
