@@ -3,5 +3,37 @@
     "latex-workshop.view.pdf.color.dark.backgroundColor": "#262626",
     "latex-workshop.view.pdf.color.light.backgroundColor": "#262626",
     "latex-workshop.view.pdf.color.dark.pageBorderColor": "#262626",
-    "latex-workshop.view.pdf.color.light.pageBorderColor": "#262626"
+    "latex-workshop.view.pdf.color.light.pageBorderColor": "#262626",
+    
+    "files.defaultLanguage": "latex",
+  // Treat LaTeX package (.sty) and class (.cls) files as LaTeX files.
+    "files.associations": {
+        "*.sty": "latex",
+        "*.cls": "latex"
+    },
+  // Hide the following file types from the VS Code folder list.
+    "files.exclude": {
+        "**/*.4ct": true,
+        "**/*.4tc": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.idv": true,
+        "**/*.lg": true,
+        "**/*.lof": true,
+        "**/*.synctex.gz": true,
+        "**/*.synctex(busy)": true,
+        "**/*.tmp": true,
+        "**/*.xref": true,
+        "**/*.fls": true,
+        "**/*.loc": true,
+        "**/*.run.xml": true,
+        "**/*.soc": true,
+        "**/*.snm": true,
+        "**/*.blg": true,
+        "**/*-SAVE-ERROR": true,
+        "**/*.aux": true,
+        "**/*.log": true,
+        "**/*.bbl": true,
+        "**/*.out": true,
+        "**/*.bcf": true
+    },
 }

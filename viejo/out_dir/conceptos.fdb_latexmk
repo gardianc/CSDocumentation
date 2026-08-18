@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1775569348.51298 "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/conceptos.tex" "out_dir/conceptos.pdf" "conceptos" 1775569349.54294 2
-  "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/conceptos.tex" 1775569347 2340 2045296260b0335454f5f35c53c4098d ""
+["pdflatex"] 1782754927.49166 "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/conceptos.tex" "out_dir/conceptos.pdf" "conceptos" 1782754928.55889 2
+  "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/conceptos.tex" 1782754924 6278 c8351a4ca8d8e19c744bf4aa00202e58 ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1774458852 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1774457487 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1774457487 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -143,7 +143,7 @@
   "c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1774543758 5619402 045890036aad9b52b154ef5568e59d3a ""
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774543970 3636407 fffcb39022005cdc86b53aafd9fb4919 ""
   "c:/texlive/2026/texmf.cnf" 1774530597 713 e69b156964470283e0530f5060668171 ""
-  "conceptos.tex" 1775569347 2340 2045296260b0335454f5f35c53c4098d ""
+  "conceptos.tex" 1782754924 6278 c8351a4ca8d8e19c744bf4aa00202e58 ""
   "out_dir/conceptos.aux" 1775569243 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
   (generated)
   "out_dir/conceptos.aux"

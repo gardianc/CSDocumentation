@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber out_dir/main"] 1786540216.16422 "out_dir/main.bcf" "out_dir/main.bbl" "out_dir/main" 1786540226.42657 0
-  "out_dir/main.bcf" 1786540215 108605 2009f6e7e220a21ca999fcfd1125f1e8 ""
+["biber out_dir/main"] 1778872853.99322 "out_dir/main.bcf" "out_dir/main.bbl" "out_dir/main" 1787059505.43193 0
+  "out_dir/main.bcf" 1787059504 108605 2009f6e7e220a21ca999fcfd1125f1e8 "pdflatex"
   "sample.bib" 1774614859 466 39c3959902581e2e9d222976347de973 ""
   (generated)
   "out_dir/main.bbl"
   "out_dir/main.blg"
   (rewritten before read)
-["pdflatex"] 1786540225.66484 "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/main.tex" "out_dir/main.pdf" "main" 1786540226.42678 2
-  "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/main.tex" 0 -1 0 ""
+["pdflatex"] 1787059502.78892 "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/viejo/main.tex" "out_dir/main.pdf" "main" 1787059505.43297 0
+  "c:/Users/pmartinez_akribis/Documents/Repositorios/Documentation/viejo/main.tex" 1787059491 2300 b645199e544baf640088fe570c47aaca ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1774525694 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1774458852 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1774458255 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -19,6 +19,7 @@
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm" 1774525694 12088 d750ac78274fa7c9f73ba09914c04f8a ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm" 1774525694 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm" 1774525694 12156 ca1ae6a3c8564e89597f1f993fba1608 ""
+  "c:/texlive/2026/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm" 1774525694 17144 271aaf9ebb339934b04110dc5211fba4 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/lm/lmex10.tfm" 1774525694 992 ce925c9346c7613270a79afbee98c070 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm" 1774525694 1528 6d36b2385e0ca062a654de6ac59cb34f ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm" 1774525694 1524 753b192b18f2991794f9d41a8228510b ""
@@ -31,6 +32,7 @@
   "c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb" 1774525694 116908 9a7a12d1e4df280ea0ab4aad83cdef88 ""
   "c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb" 1774525694 113634 9384aebdf26f9881e046a4b5574566db ""
   "c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr17.pfb" 1774525694 119752 1bd8d06e4079df624bf59ce3ad7c9aa6 ""
+  "c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri12.pfb" 1774525694 109265 e6c7d377db6dfccd4a123fb26da8cffb ""
   "c:/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1774526406 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2026/texmf-dist/tex/generic/babel-spanish/spanish.ldf" 1774456714 26965 3b6d1655ad716f98e788b1fb9f2e87b8 ""
   "c:/texlive/2026/texmf-dist/tex/generic/babel/babel.sty" 1774456626 147019 947cc37d427f8f58060f95c0a1434153 ""
@@ -125,12 +127,16 @@
   "c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1774543758 5619402 045890036aad9b52b154ef5568e59d3a ""
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774543970 3636407 fffcb39022005cdc86b53aafd9fb4919 ""
   "c:/texlive/2026/texmf.cnf" 1774530597 713 e69b156964470283e0530f5060668171 ""
-  "main.tex" 0 -1 0 ""
-  "out_dir/main.aux" 1786540215 1138 6e65330870944589d5ab76d331df6bed "pdflatex"
-  "out_dir/main.bbl" 1786540225 1748 819d7d993cca49867aeff607f6cec4e1 "biber out_dir/main"
-  "out_dir/main.out" 1786540215 680 5e8a2d37210369d2c9c4ddf4d51931c6 ""
+  "main.tex" 1787059491 2300 b645199e544baf640088fe570c47aaca ""
+  "out_dir/main.aux" 1787059504 1210 0722faa21659e3ec318f4d0c188ef3be "pdflatex"
+  "out_dir/main.bbl" 1778872862 1748 819d7d993cca49867aeff607f6cec4e1 "biber out_dir/main"
+  "out_dir/main.out" 1787059504 680 5e8a2d37210369d2c9c4ddf4d51931c6 "pdflatex"
+  "out_dir/main.run.xml" 1787059504 2301 aeb72638caef96b2b62108dc5a863e9c "pdflatex"
   (generated)
   "out_dir/main.aux"
+  "out_dir/main.bcf"
   "out_dir/main.log"
+  "out_dir/main.out"
   "out_dir/main.pdf"
+  "out_dir/main.run.xml"
   (rewritten before read)

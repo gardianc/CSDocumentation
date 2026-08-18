@@ -63,7 +63,7 @@ El ancho de la curva es $\Delta = b-a$, la media es $\mu = \frac{a+b}{2}$ y la d
 \end{figure}
 
 
-Cuando tenemos una magnitud de entrada con distribución de origen rectangular, la componente de incertidumbre viene dada como el ancho $\Delta$ o el medio ancho $\frac{\Delta}{2}$ de la curva, y el factor de estandarización necesario para obtener la incertidumbre típica será $\frac{1}{\sqrt{12}}$ o $\frac{1}{\sqrt{3}}$ respectivamente.
+Cuando tenemos una magnitud de entrada con distribución de origen rectangular, la componente de incertidumbre viene dada como el ancho $\Delta$ o el medio ancho $\frac{\Delta}{2}$ de la curva, y el factor de estandarización necesario para obtener la incertidumbre típica será $\sqrt{12}=2\sqrt{3}$ o $\sqrt{3}$ respectivamente.
 
 La distribución triangular se usa cuando hay poca información disponible sobre la magnitud de entrada, y se conoce o interesa sólo el mínimo, el máximo y el valor más probable.
 
@@ -73,4 +73,17 @@ La distribución triangular se usa cuando hay poca información disponible sobre
     \caption{\label{fig:triangular_pdf}Triangular}
 \end{figure}
 
-Cuando es simétrica respecto a la esperanza $\mu = \frac{b+d}{2}$, el ancho de la curva es $\Delta = d-b$ y la desviación estándar es $\sigma = \frac{d-b}{2\sqrt{6}}$. La componente de incertidumbre viene dada como el ancho $\Delta$ o el medio ancho $\frac{\Delta}{2}$ de la curva, y el factor de estandarización necesario para obtener la incertidumbre típica será $\frac{1}{2\sqrt{6}}$ o $\frac{1}{\sqrt{6}}$ respectivamente.
+Cuando es simétrica respecto a la esperanza $\mu = \frac{b+d}{2}$, el ancho de la curva es $\Delta = d-b$ y la desviación estándar es $\sigma = \frac{d-b}{2\sqrt{6}}$. La componente de incertidumbre viene dada como el ancho $\Delta$ o el medio ancho $\frac{\Delta}{2}$ de la curva, y el factor de estandarización necesario para obtener la incertidumbre típica será $2\sqrt{6}$ o $\sqrt{6}$ respectivamente.
+
+\subsection{Algunos términos experimentales}
+
+\subsubsection{Histéresis}
+
+La histéresis es un fenómeno físico por el cual el estado de un material depende de su historia, es decir la tendencia de un material de conservar una de sus propiedades, aún en ausencia del estímulo que la generó. 
+El ejemplo paradigmático es la histéresis en materiales ferromagnéticos, materiales que se magnetizan o "convierten" en imanes en presencia de un campo magnético externo. Al aumentar el campo externo puede observarse experimentalmente la magnetización a cada valor del mismo. Al disminuir el campo externo luego de magnetizar el material y medir en los mismos valores, se observa que no se desmagnetizan a la mismo velocidad, los valores de magnetización no son los mismos si no que son más altos para igual valor del campo externo, debido a que el material conserva todavía esa propiedad.
+
+Un ejemplo común en el laboratorio es al medir temperatura. A medida que se calienta el material se puede medir un punto para comparar por histéresis. Si luego de haber calentado hasta una temperatura mayor el material se vuelve a medir en ese mismo valor de temperatura se observa que el valor medido es distinto, porque el material del sensor conserva memoria de haberse calentado.
+
+\subsubsection{Deriva}
+
+\subsubsection{Tolerancia}
