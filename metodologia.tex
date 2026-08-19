@@ -1,40 +1,47 @@
 \subsection{Modelo matemático del mensurando}
 
-En la mayor parte de los casos, un \textit{mensurando} o \textit{magnitud de salida} $Y$ que se busca reportar como resultado de una medición o calibración no se mide directamente, sino que se determina a partir de otras $N$ \textit{magnitudes de entrada} $X_1, X_2, \ldots, X_N$, por medio de una relación funcional $f$ :
+En la mayor parte de los casos, un \textit{mensurando} o \textit{magnitud de salida} $Y$ que se busca reportar como resultado de una medición o calibración no se mide directamente, sino que se determina a partir de otras $N$ \textit{magnitudes de entrada} $X_1, X_2, \ldots, X_N$, por medio de una relación funcional $f$\cite{GUM4.1}:
 
 \begin{equation}
-    Y = f(X_1, \ldots, X_N).    
+    Y = f(X_1, \ldots, X_N).
+    \label{modelo-matematico}    
 \end{equation}
 
-**[GUM 4.1.1, p.11 ec. (1)]**
+% **[GUM 4.1.1, p.11 ec. (1)]**
 
-Las magnitudes de entrada de las que depende la magnitud de salida pueden ser consideradas a su vez como mensurandos dependientes de otras magnitudes, junto con las \textit{correcciones} y \textit{factores de corrección} por efectos sistemáticos. **[GUM 4.1.2, 4.1.3]** $f$, entonces, es la función que contiene toda magnitud, incluyendo correcciones y factores de corrección, susceptible de contribuir a una componente significativa de la incertidumbre del resultado de medida. Para la determinación de $f$ se identifican todas estas variables de influencia, incluyendo aquellas que son despreciables en corrección pero sí son considerables en su incertidumbre y se toma una decisión informada sobre cuáles son significativas o despreciables a partir del modelo físico conocido del mensurando $Y$ y de métodos experimentales.
+Las magnitudes de entrada de las que depende la magnitud de salida pueden ser consideradas a su vez como mensurandos dependientes de otras magnitudes, junto con las \textit{correcciones} y \textit{factores de corrección} por efectos sistemáticos\cite{GUM4.1}. $f$, entonces, es la función que contiene toda magnitud, incluyendo correcciones y factores de corrección, susceptible de contribuir a una componente significativa de la incertidumbre del resultado de medida. Para la determinación de $f$ se identifican todas estas variables de influencia, incluyendo aquellas que son despreciables en corrección pero sí son considerables en su incertidumbre, y se toma una decisión informada sobre cuáles son significativas o despreciables a partir del modelo físico conocido del mensurando $Y$ y de métodos experimentales.
+% manual de calidad?
+% **[GUM 4.1.2, 4.1.3]**
 
 La combinación de la relación funcional $f$ y el conjunto de las magnitudes de entrada, las correcciones y las \textit{componentes de incertidumbre} que contribuyen a la incertidumbre del resultado de medición determinan el \textit{modelo matemático} de la calibración.
 
 \subsection{Evaluación del resultado de medición y componentes de incertidumbre}
 
-La evaluación (asignación de valores) o estimación de las magnitudes de entrada y componentes de incertidumbre puede determinarse a partir mediciones y métodos estadísticos o importarse de fuentes externas e información disponible previamente (libros, papers, certificados, etc.). **[GUM 4.1.3]**
+La evaluación (asignación de valores) o estimación de las magnitudes de entrada y componentes de incertidumbre puede determinarse a partir mediciones y métodos estadísticos o importarse de fuentes externas e información disponible previamente (libros, papers, certificados, etc.)\cite{GUM4.1}.
+% **[GUM 4.1.3]**
 
-El resultado de la medición $y$ es una \textit{estimación} del mensurando $Y$, que se obtiene introduciendo las $N$ estimaciones de entrada $x_1, x_2, \ldots, x_N$ para los valores de las $N$ magnitudes $X_1, X_2, \ldots, X_N$ en la ecuación **[]**:
+El resultado de la medición $y$ es una \textit{estimación} del mensurando $Y$, que se obtiene introduciendo las $N$ estimaciones de entrada $x_1, x_2, \ldots, x_N$ para los valores de las $N$ magnitudes $X_1, X_2, \ldots, X_N$ en la ecuación \cref{modelo-matematico}\cite{GUM4.1}:
 
 \begin{equation}
     y = f(x_1, \ldots, x_N).
 \end{equation}
 
-**[GUM 4.1.4, p.12 ec. (2)]**
+% **[GUM 4.1.4, p.12 ec. (2)]**
 
-La desviación estándar estimada asociada a $y$, denominada \textit{incertidumbre estándar combinada} o \textit{incertidumbre combinada} y representada por $u_c(y)$, se determina a partir de la desviación estándar estimada asociada a cada estimación de entrada $x_i$, denominada \textit{incertidumbre estándar} y representada por $u(x_i)$ o $\sigma(x_i)$. **[GUM 4.1.5, p.12]**. Cada $x_i$ y su $\sigma(x_i)$ provienen de una distribución de valores posibles (distribución de probabilidad) observada o supuesta en base a la información conocida de la magnitud de entrada $X_i$. **[GUM 4.1.6, p.12]** y tienen un número de grados de libertad asociado.
+La desviación estándar estimada asociada a $y$, denominada \textit{incertidumbre estándar combinada} o \textit{incertidumbre combinada} y representada por $u_c(y)$, se determina a partir de la desviación estándar estimada asociada a cada estimación de entrada $x_i$, denominada \textit{incertidumbre estándar} y representada por $u(x_i)$ o $\sigma(x_i)$\cite{GUM4.1}. Cada $x_i$ y su $\sigma(x_i)$ provienen de una distribución de valores posibles (distribución de probabilidad), observada o supuesta en base a la información conocida de la magnitud de entrada $X_i$\cite{GUM4.1}, y tienen un número de grados de libertad asociado.
+
+% **[GUM 4.1.5, p.12]**, **[GUM 4.1.6, p.12]**
 
 \subsubsection{Factor de estandarización}
 
 La forma y el ancho de la distribución de probabilidad de origen determinan el \textit{factor de estandarización} por el cual debe dividirse el valor numérico de cada componente de incertidumbre para obtener la incertidumbre estándar correspondiente.
 
 \begin{equation}
-    \sigma(x_i) = \frac{\Delta_{\textit{componente}}}{\textit{factor}},
+    \sigma(x_i) = \frac{\Delta_i}{\text{factor}},
 \end{equation}
+% manual de calidad?
 
-donde llamo $\Delta$ al valor numérico de la componente de incertidumbre sin estandarizar.
+donde llamo $\Delta_i$ al valor numérico de la componente de incertidumbre $i$ sin estandarizar.
 
 \begin{table}[!htb]
 \centering
@@ -53,13 +60,13 @@ Triangular   & Medio ancho de la PDF    & $\sqrt{6}$  \\ \bottomrule
 
 \subsubsection{Tipos de incertidumbre y grados de libertad}
 
-Las componentes de incertidumbre se clasifican por su método de evaluación en incertidumbres de tipo A y de tipo B. Las incertidumbres de tipo A son aquellas que se obtienen mediante el análisis estadístico de serie de observaciones. **[GUM 4.2]** El número de grados de libertad para incertidumbres de este tipo es 
+Las componentes de incertidumbre se clasifican por su método de evaluación en incertidumbres de tipo A y de tipo B. Las incertidumbres de tipo A son aquellas que se obtienen mediante el análisis estadístico de serie de observaciones\cite{GUM4.2}. El número de grados de libertad para incertidumbres de este tipo es 
 
 \begin{equation}
   \nu = n - m,
 \end{equation}
 
-donde n es el número de observaciones y m el número de restricciones involucradas en la estimación. **[GUM 4.2, G.3.3]** Las incertidumbres de tipo B son aquellas que se obtienen por cualquier otro método que no sea el análisis estadístico de observaciones **[GUM 4.3]**. Para las incertidumbres de tipo B el grado de libertad es infinito **[GUM G.6.4]**, aunque en la práctica basta con asumir $\nu \approx 100$.
+donde n es el número de observaciones y m el número de restricciones involucradas en la estimación\cite{GUM4.2,GUMG.3.3}. Las incertidumbres de tipo B son aquellas que se obtienen por cualquier otro método que no sea el análisis estadístico de observaciones\cite{GUM4.3}. Para las incertidumbres de tipo B el grado de libertad es infinito\cite{GUMG.6.4}, aunque en la práctica basta con asumir $\nu \approx 100$. % MANUAL?
 
 \subsection{Determinación de la incertidumbre combinada}
 
@@ -75,8 +82,8 @@ donde
     c_i = \left. \left(\frac{\partial f}{\partial X_i}\right) \right|_{x_i} \equiv \frac{\partial f}{\partial x_i}
 \end{equation}
 
-es el \textit{coeficiente de sensibilidad} de la componente, un parámetro que describe cuán sensible es el resultado de la medición a variaciones en la magnitud de entrada $x_i$. Los $c_i$ también pueden calcularse de forma experimental.
-[**GUM 5.1.1, 5.1.2, 5.1.3**]
+es el \textit{coeficiente de sensibilidad} de la componente, un parámetro que describe cuán sensible es el resultado de la medición a variaciones en la magnitud de entrada $x_i$. Los $c_i$ también pueden calcularse de forma experimental\cite{GUM5.1}.
+% [**GUM 5.1.1, 5.1.2, 5.1.3**]
 
 \subsection{Determinación de la incertidumbre expandida}
 
@@ -86,24 +93,28 @@ Para satisfacer las necesidades de determinadas aplicaciones industriales y come
     U = k \cdot u_c(y).
 \end{equation}
 
-U define un intervalo $y - U$ a $y + U$ alrededor del resultado de medición que comprende una fracción $p$ de la distribución de probabilidad de salida de $y$ y $u_c(y)$. $p$ es el \textit{nivel de confianza} o \textit{probabilidad} del intervalo, la probabilidad de que el valor ``verdadero'' de la magnitud de salida $Y$ se encuentre dentro de ese intervalo (probabilidad de que $y-U\leq Y \leq y+U$). 
-**[GUM 6.2]**
+U define un intervalo $y - U$ a $y + U$ alrededor del resultado de medición que comprende una fracción $p$ de la distribución de probabilidad de salida de $y$ y $u_c(y)$. $p$ es el \textit{nivel de confianza} o \textit{probabilidad} del intervalo, la probabilidad de que el valor ``verdadero'' de la magnitud de salida $Y$ se encuentre dentro de ese intervalo (probabilidad de que $y-U\leq Y \leq y+U$)\cite{GUM6.2}. 
+% **[GUM 6.2]**
 
 \subsection{Elección de \textit{k} y distribución t-Student}
 
-El factor de cobertura requerido para asegurar un nivel de confianza $p$ en el intervalo $y - U$ a $y + U$ depende de la distribución de probabilidad de la magnitud de salida **[GUM 6.3.2]**, por ejemplo, para la distribución normal $k=2$ corresponde a un nivel aproximado de confianza 95\%. En general esta distribución no se conoce porque resulta de la convolución de las distribuciones de probabilidad de todas las magnitudes de entrada, lo que requiere un amplio conocimiento de cada una de ellas y cálculos extensos de combinación de distribuciones. Se acepta su aproximación por la distribución t-Student de $\nu_{eff}$ grados de libertad, donde $\nu_{eff}$ son los grados de libertad efectivos de $u_c(y)$ **[GUM G.6.2]**, calculados con la fórmula de Welch-Satterthwaite
+El factor de cobertura requerido para asegurar un nivel de confianza $p$ en el intervalo $y - U$ a $y + U$ depende de la distribución de probabilidad de la magnitud de salida\cite{GUM6.2}, por ejemplo, para la distribución normal $k=2$ corresponde a un nivel aproximado de confianza 95\%. En general esta distribución no se conoce porque resulta de la convolución de las distribuciones de probabilidad de todas las magnitudes de entrada, lo que requiere un amplio conocimiento de cada una de ellas y cálculos extensos de combinación de distribuciones. Se acepta su aproximación por la distribución t-Student de $\nu_{eff}$ grados de libertad, donde $\nu_{eff}$ son los grados de libertad efectivos de $u_c(y)$\cite{GUMG.6.2}, calculados con la fórmula de Welch-Satterthwaite
+% **[GUM 6.3.2], **[GUM G.6.2]****
+
 
 \begin{equation}
     \nu_{eff} = \frac{u_c^4(y)}{\sum^N_{i=1}[\frac{u_i^4(y)}{\nu_i}]},
 \end{equation}
 
-con $u_i(y) = |c_i|u(x_i)$. **[GUM G.4.1]** El factor $k$ se obtiene como $t_p(\nu_{eff})$ el valor crítico para un nivel de confianza $p$ a dos colas obtenido directamente de la función de probabilidad acumulada inversa de la distribución t-Student de $\nu_{eff}$ grados de libertad. De esta forma
+con $u_i(y) = |c_i|u(x_i)$\cite{GUMG.6.4}. El factor $k$ se obtiene como $t_p(\nu_{eff})$ el valor crítico para un nivel de confianza $p$ a dos colas obtenido directamente de la función de probabilidad acumulada inversa de la distribución t-Student de $\nu_{eff}$ grados de libertad. De esta forma
+% **[GUM G.4.1]**
+
 \begin{equation}
     U = k_p \cdot u_c(y) = t_p(\nu_{eff}) \cdot u_c(y).    
 \end{equation}
 
-La distribución de Welch-Satterthwaite tiende a la distribución normal cuando $\nu \longrightarrow \inf$. Para un nivel de confianza $p = 95\%$, si se obtiene $k_p<2$ se considera que la distribución de salida está bien aproximada por la distribución normal, de modo que en ese caso se elige en su lugar $k=2$ para reportar la incertidumbre expandida con un nivel aproximado de confianza del 95% bajo la distribución normal. 
-**[GUM G.6.6]**
+La distribución de Welch-Satterthwaite tiende a la distribución normal cuando $\nu \longrightarrow \inf$. Para un nivel de confianza $p = 95\%$, si se obtiene $k_p<2$ se considera que la distribución de salida está bien aproximada por la distribución normal, de modo que en ese caso se elige en su lugar $k=2$ para reportar la incertidumbre expandida con un nivel aproximado de confianza del 95\% bajo la distribución normal\cite{GUMG.6.4}. 
+% **[GUM G.6.6]**
 
 \subsection{Otros resultados}
 
@@ -115,7 +126,7 @@ Para valorar y comparar los diferentes tipos de contribuciones se calcula el \te
 \begin{equation}
     \text{Peso}\% = \left(\frac{c_i \cdot u(x_i)}{u_c}\right)^{2} \cdot 100.
 \end{equation}
-
+% manual de calidad?
 \subsubsection{Condiciones ambientales}
 
 Las condiciones ambientales observadas durante la calibración se calculan como el promedio de las lecturas al inicio y al final de la medición, es decir, dada una condición ambiental $x$
@@ -139,6 +150,7 @@ donde $tol_p$ es la tolerancia porcentual y $tol_f$ la tolerancia fija requerida
 En caso de solicitarse, la evaluación de conformidad se puede realizar de acuerdo a dos reglas de decisión posibles. 
 
 \textbf{Aceptación simple}
+
 Se dice que ``Cumple'' si
 \begin{equation*}
     |C| <= tol,    

@@ -44,7 +44,11 @@
 
 % TABLAS
 \usepackage{booktabs}
-
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[column=Q]{cellspace} % changed to Q for simultaneous use of siunitx
+\setlength{\cellspacetoplimit}{5pt}
+\setlength{\cellspacebottomlimit}{5pt}
 
 \title{Material de referencia matemática}
 \author{Paula Martínez Garbino}
@@ -63,13 +67,10 @@
 
 \input{metodologia}
 
-\section{Conceptos útiles}
+\section{Temperatura de contacto y ambiental}\label{sec:temperatura}
 
-% \input{conceptos}
+\input{temperatura}
 
-\section{Temperatura}\label{sec:temperatura}
-
-% \input{temperatura}
-
+\clearpage
 \printbibliography
-\end{document}vs
+\end{document}
