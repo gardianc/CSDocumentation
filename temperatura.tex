@@ -1,5 +1,6 @@
-\subsection{Determinación informada}
-\label{sec:determinacion-informada}
+% chktex-file 13
+
+\subsection{Determinación informada}\label{sec:determinacion-informada}
 
 La determinación informada en el certificado (mensurando, resultado de salida) es la corrección de la UBP:
 \begin{equation}
@@ -28,11 +29,9 @@ Las únicas correcciones que se consideran significativas son la corrección por
     C = \bar{T}_{pat} + \delta_{\textit{ccr pat}} + \delta_{\textit{imm pat}} - (\bar{T}_{ubp} + \delta_{\textit{imm ubp}})
 \end{equation}
 
-\subsection{Correcciones}
-\label{sec:correcciones}
+\subsection{Correcciones}\label{sec:correcciones}
 
-\subsubsection{Corrección del patrón por polinomio de interpolación ($\delta_{\textit{ccr pat}}$)}
-\label{sec:correccion-patron}
+\subsubsection{Corrección del patrón por polinomio de interpolación ($\delta_{\textit{ccr pat}}$)}\label{sec:correccion-patron}
 
 Los coeficientes $m$ y $b$ provienen del ajuste lineal por mínimos cuadrados de la corrección informada en el certificado de calibración vigente del patrón. La corrección es la función de ajuste (recta) evaluada en el promedio de la temperatura medida por el patrón \autocite{NW2.12,GUMH.3}.
 \begin{equation}
@@ -41,8 +40,7 @@ Los coeficientes $m$ y $b$ provienen del ajuste lineal por mínimos cuadrados de
 
 % **[GUM H.3.1-H.3.3, p.93-95; N&W §2.12, p.83-85]**
 
-\subsubsection{Por error de inmersión ($\delta_{\textit{imm}}$)}
-\label{sec:correccion-inmersion}
+\subsubsection{Por error de inmersión ($\delta_{\textit{imm}}$)}\label{sec:correccion-inmersion}
 Aplica sólo para {termómetros de contacto}, que se calibran en medios de inmersión (bloques secos y baños líquidos). En termómetros con sensores de longitud no despreciable se observa que la punta del termómetro indica temperaturas ligeramente inferiores en módulo a la temperatura del medio. La corrección de este efecto se modela como
 
 \begin{equation}
@@ -59,8 +57,7 @@ Tomando $K \approx 1$ resulta $D_{eff} = D$ para baños líquidos, y $D_{eff} = 
 
 Para el caso de mediciones en laboratorio el patrón siempre se inserta a la inmersión máxima posible del medio ($L_{pat}$ = longitud de inmersión máxima del medio). Para la UBP se sobreestima la corrección asumiento que está a la inmersión mínima posible en el medio ($L_{ubp}$ = longitud de inmersión mínima del medio) ya que las longitudes de los sensores de las distintas unidades bajo prueba pueden variar.
 
-\subsection{Componentes de incertidumbre}
-\label{sec:componentes}
+\subsection{Componentes de incertidumbre}\label{sec:componentes}
 
 \subsubsection{Repetibilidad ($\sigma_{\textit{rep ubp}}$, $\sigma_{\textit{rep pat}}$)}
 
@@ -95,11 +92,11 @@ Fenómeno que produce una diferencia en las lecturas de un instrumento de medici
     \Delta_{\textit{his ubp}} = 0{,}002\,(T_{max} - T_{min}),
 \end{equation}
 
-donde $T_{max}$ y $T_{min}$ son el mayor y el menor punto de calibración ensayados\cref{DKD8.10}. Al obtenerse de información conocida y no de una serie de mediciones es una incertidumbre de tipo B.
+donde $T_{max}$ y $T_{min}$ son el mayor y el menor punto de calibración ensayados\cite{DKD8.10}. Al obtenerse de información conocida y no de una serie de mediciones es una incertidumbre de tipo B.
 
 % **[th-001 §4, p.6; DKD-R 5-1 §8.10, p.19; N&W §2.7.3 Ej. 2.10, p.61]**
 
-\textit{Criterio 2}: Se registran mediciones en el punto medio del rango durante las carrera ascendente y descendiente. La histéresis es la diferencia entre los promedios de ambas series\cref{DKD8.10}:
+\textit{Criterio 2}: Se registran mediciones en el punto medio del rango durante las carrera ascendente y descendiente. La histéresis es la diferencia entre los promedios de ambas series\cite{DKD8.10}:
 
 \begin{equation}
     \Delta_{\textit{his ubp}} = \lvert \bar{T}_{asc} - \bar{T}_{desc} \rvert.
