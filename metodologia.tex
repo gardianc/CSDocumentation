@@ -17,11 +17,11 @@ Las magnitudes de entrada de las que depende la magnitud de salida pueden ser co
 % manual de calidad?
 % **[GUM 4.1.2, 4.1.3]**
 
-La combinación de la relación funcional $f$ y el conjunto de las magnitudes de entrada, las correcciones y las \textit{componentes de incertidumbre} que contribuyen a la incertidumbre del resultado de medición determinan el \textit{modelo matemático} de la calibración.
+La combinación de la relación funcional $f$ y el conjunto de las magnitudes de entrada, las correcciones y las \textit{componentes de incertidumbre} que contribuyen a la incertidumbre del resultado de medición determina el \textit{modelo matemático} de la calibración.
 
 \subsection{Evaluación del resultado de medición y componentes de incertidumbre}
 
-El resultado de la medición $y$ es una \textit{estimación} del mensurando $Y$, que se obtiene introduciendo las $N$ estimaciones de entrada $x_1, x_2, \ldots, x_N$ para los valores de las $N$ magnitudes $X_1, X_2, \ldots, X_N$ en la ecuación \cref{modelo-matematico}\cite{GUM4.1}:
+El resultado de la medición $y$ es una \textit{estimación} del mensurando $Y$, que se obtiene introduciendo las $N$ estimaciones de entrada $x_1, x_2, \ldots, x_N$ para los valores de las $N$ magnitudes $X_1, X_2, \ldots, X_N$ en la \cref{modelo-matematico}\cite{GUM4.1}:
 
 \begin{equation}
     y = f(x_1, \ldots, x_N).
@@ -29,7 +29,7 @@ El resultado de la medición $y$ es una \textit{estimación} del mensurando $Y$,
 
 % **[GUM 4.1.4, p.12 ec. (2)]**
 
-La evaluación (asignación de valores) o estimación de las magnitudes de entrada y componentes de incertidumbre puede determinarse a partir mediciones y métodos estadísticos o importarse de fuentes externas e información disponible previamente (libros, papers, certificados, etc.) \cite{GUM4.1}.
+La evaluación (asignación de valores) o estimación de las magnitudes de entrada y componentes de incertidumbre puede determinarse a partir de mediciones y métodos estadísticos o importarse de fuentes externas e información disponible previamente (libros, papers, certificados, etc.) \cite{GUM4.1}.
 % **[GUM 4.1.3]**
 
 La desviación estándar estimada asociada a $y$, denominada \textit{incertidumbre estándar combinada} o \textit{incertidumbre combinada} y representada por $u_c(y)$, se determina a partir de la desviación estándar estimada asociada a cada estimación de entrada $x_i$, denominada \textit{incertidumbre estándar} y representada por $u(x_i)$ o $\sigma(x_i)$ \cite{GUM4.1}. Cada $x_i$ y su $\sigma(x_i)$ provienen de una distribución de valores posibles (distribución de probabilidad), observada o supuesta en base a la información conocida de la magnitud de entrada $X_i$ \cite{GUM4.1}, y tienen un número de grados de libertad asociado.
@@ -64,13 +64,13 @@ Triangular   & Medio ancho de la PDF    & $\sqrt{6}$  \\ \bottomrule
 
 \subsubsection{Tipos de incertidumbre y grados de libertad}
 
-Las componentes de incertidumbre se clasifican por su método de evaluación en incertidumbres de tipo A y de tipo B. Las incertidumbres de tipo A son aquellas que se obtienen mediante el análisis estadístico de serie de observaciones \cite{GUM4.2}. El número de grados de libertad para incertidumbres de este tipo es 
+Las componentes de incertidumbre se clasifican por su método de evaluación en incertidumbres de tipo A y de tipo B. Las incertidumbres de tipo A son aquellas que se obtienen mediante el análisis estadístico de una serie de observaciones \cite{GUM4.2}. El número de grados de libertad para incertidumbres de este tipo es 
 
 \begin{equation}
   \nu = n - m,
 \end{equation}
 
-donde n es el número de observaciones y m el número de restricciones involucradas en la estimación \cite{GUM4.2,GUMG.3.3}. Las incertidumbres de tipo B son aquellas que se obtienen por cualquier otro método que no sea el análisis estadístico de observaciones \cite{GUM4.3}. Para las incertidumbres de tipo B el grado de libertad es infinito \cite{GUMG.6.4}, aunque en la práctica basta con asumir $\nu \approx 100$. % MANUAL?
+donde n es el número de observaciones y m el número de restricciones involucradas en la estimación \cite{GUM4.2,GUMG.3.3}. Las incertidumbres de tipo B son aquellas que se obtienen por cualquier otro método que no sea el análisis estadístico de observaciones \cite{GUM4.3}. Para las incertidumbres de tipo B los grados de libertad son infinitos \cite{GUMG.6.4}, aunque en la práctica basta con asumir $\nu \approx 100$. % MANUAL?
 
 \subsection{Determinación de la incertidumbre combinada}
 
@@ -102,7 +102,7 @@ U define un intervalo $y - U$ a $y + U$ alrededor del resultado de medición que
 
 \subsection{Elección de \textit{k} y distribución t-Student}
 
-El factor de cobertura requerido para asegurar un nivel de confianza $p$ en el intervalo $y - U$ a $y + U$ depende de la distribución de probabilidad de la magnitud de salida \cite{GUM6.2}, por ejemplo, para la distribución normal $k=2$ corresponde a un nivel aproximado de confianza 95\%. En general esta distribución no se conoce porque resulta de la convolución de las distribuciones de probabilidad de todas las magnitudes de entrada, lo que requiere un amplio conocimiento de cada una de ellas y cálculos extensos de combinación de distribuciones. Se acepta su aproximación por la distribución t-Student de $\nu_{eff}$ grados de libertad, donde $\nu_{eff}$ son los grados de libertad efectivos de $u_c(y)$ \cite{GUMG.6.2}, calculados con la fórmula de Welch-Satterthwaite
+El factor de cobertura requerido para asegurar un nivel de confianza $p$ en el intervalo $y - U$ a $y + U$ depende de la distribución de probabilidad de la magnitud de salida \cite{GUM6.2}, por ejemplo, para la distribución normal $k=2$ corresponde a un nivel aproximado de confianza del 95\%. En general esta distribución no se conoce porque resulta de la convolución de las distribuciones de probabilidad de todas las magnitudes de entrada, lo que requiere un amplio conocimiento de cada una de ellas y cálculos extensos de combinación de distribuciones. Se acepta su aproximación por la distribución t-Student de $\nu_{eff}$ grados de libertad, donde $\nu_{eff}$ son los grados de libertad efectivos de $u_c(y)$ \cite{GUMG.6.2}, calculados con la fórmula de Welch-Satterthwaite
 % **[GUM 6.3.2], **[GUM G.6.2]****
 
 
@@ -117,12 +117,12 @@ con $u_i(y) = |c_i|\sigma(x_i)$ \cite{GUMG.6.4}. El factor $k$ se obtiene como $
     U = k_p \cdot u_c(y) = t_p(\nu_{eff}) \cdot u_c(y).    
 \end{equation}
 
-La distribución de t-Student tiende a la distribución normal cuando $\nu \longrightarrow \infty$. Para un nivel de confianza $p = 95\%$, si se obtiene $k_p<2$ se considera que la distribución de salida está bien aproximada por la distribución normal, de modo que en ese caso se elige en su lugar $k=2$ para reportar la incertidumbre expandida con un nivel aproximado de confianza del 95\% bajo la distribución normal \cite{GUMG.6.4}. 
+La distribución t-Student tiende a la distribución normal cuando $\nu \longrightarrow \infty$. Para un nivel de confianza $p = 95\%$, si se obtiene $k_p<2$ se considera que la distribución de salida está bien aproximada por la distribución normal, de modo que en ese caso se elige en su lugar $k=2$ para reportar la incertidumbre expandida con un nivel aproximado de confianza del 95\% bajo la distribución normal \cite{GUMG.6.4}. 
 % **[GUM G.6.6]**
 
 \subsection{Otros resultados}
 
-Ya sea para validar los cálculos de estimación de la incertidumbre o para reportarlo en el certificado de calibración, hay otros resultados aparte de la incertidumbre expandida que es de interés conocer.
+Ya sea para validar los cálculos de estimación de la incertidumbre o para reportarlos también en el certificado de calibración, hay otros resultados aparte de la incertidumbre expandida que es de interés calcular.
 
 \subsubsection{Peso relativo porcentual}
 
@@ -141,15 +141,15 @@ y su error es la semiamplitud del intervalo,
 \begin{equation}
     \Delta x = \frac{|x_f-x_i|}{2},
 \end{equation}
-donde $x_i$ y $x_f$ son el valor observado de $x$ al iniciar y al terminar las mediciones. 
+donde $x_i$ y $x_f$ son los valores observados de $x$ al comienzo y al final de la medición. 
 
 \subsubsection{Tolerancia y dictamen de conformidad}\label{sec:dictamen-conformidad}
 
-El cliente puede solicitar una evaluación de la conformidad del resultado de la calibración respecto a una tolerancia específica, definida por alguna norma o criterio industrial. De forma general la tolerancia para un determinado punto se calcula como
+Si el cliente lo solicita se realiza una evaluación de la conformidad del resultado de la calibración respecto a una tolerancia específica, definida por alguna norma o criterio industrial. De forma general la tolerancia para un determinado punto se calcula como
 \begin{equation}
-    tol = \frac{tol_p\%}{100}\cdot|x_{set}| + tol_f,
+    tol = \frac{tol_{\textit{\%}}}{100}\cdot|x_{set}| + tol_{\textit{f}},
 \end{equation}
-donde $tol_p$ es la tolerancia porcentual y $tol_f$ la tolerancia fija requeridas para ese punto de calibración y $x_{set}$ es el valor de seteo del punto.
+donde $tol_{\textit{\%}}$ es la tolerancia porcentual y $tol_{\textit{f}}$ la tolerancia fija requeridas para ese punto de calibración y $x_{set}$ es el valor de seteo del punto.
 
 En caso de solicitarse, la evaluación de conformidad se puede realizar de acuerdo a dos reglas de decisión posibles. 
 

@@ -19,7 +19,7 @@ donde $T_{ref}$ es la temperatura de referencia y $T_{med}$ la temperatura medid
 \end{equation}
 es decir que el coeficiente de sensibilidad vale -1 para toda componente de incertidumbre que provenga de la UBP, y +1 para las del patrón y las del medio de comparación.
 
-Las únicas correcciones que se consideran significativas son la corrección por polinomio interpolador del patrón y, en el caso de temperatura de contacto, la corrección por error de inmersión. El resto de las contribuciones se considera despreciable en corrección (tienen estimación nula), aunque aporten en la incertidumbre (ver \cref{sec:componentes}).
+Las únicas correcciones que se consideran significativas son la corrección por polinomio interpolador del patrón y, en el caso de temperatura de contacto, la corrección por error de inmersión. El resto de las contribuciones se considera despreciable en corrección (tienen estimación nula), aunque aporten a la incertidumbre (ver \cref{sec:componentes}).
 
 \textbf{Ambiental}
 
@@ -50,8 +50,7 @@ Aplica sólo para {termómetros de contacto}, que se calibran en medios de inmer
     \delta_{\textit{imm}} = (T_{set} - T_{amb})Ke^{\frac{-L}{D_{eff}}}
 \end{equation}
 
-donde $T_{set}$ es el punto de seteo, la temperatura nominal del punto de calibración, $T_{amb}$ la temperatura ambiente, $K$ una constante menor pero cercana a 1, $L$ la longitud de inmersión y $D_{eff}$ el diámetro efectivo del termómetro \autocite{NW4.4.1,TAVENER}.
-Tomando $K \approx 1$ resulta $D_{eff} = D$ para baños líquidos, y $D_{eff} = 2D$ para bloques secos, con $D$ el diámetro del termómetro,. Se puede reescribir la fórmula definiendo una constante $\gamma = \dfrac{D_{eff}}{D}$ = 1 ó 2 según si el medio es baño líquido o bloque seco, de modo que las correcciones resultan
+donde $T_{set}$ es el punto de seteo, la temperatura nominal del punto de calibración, $T_{amb}$ la temperatura ambiente, $K$ una constante menor pero cercana a 1, $L$ la longitud de inmersión y $D_{eff}$ el diámetro efectivo del termómetro que resulta $D_{eff} = D$ para baños líquidos, y $D_{eff} = 2D$ para bloques secos, con $D$ el diámetro del termómetro \autocite{NW4.4.1,TAVENER}. Tomando $K \approx 1$ como en la bibliografía se puede reescribir la fórmula definiendo una constante $\gamma = \dfrac{D_{eff}}{D}$ = 1 o 2 según si el medio es baño líquido o bloque seco, de modo que las correcciones resultan
 % **[N&W §4.4.1, p.137; Tavener §3, p.5, Tavener §3, p.6]**
 
 \begin{equation}
@@ -87,19 +86,19 @@ Incertidumbre debida a la mínima diferencia entre indicaciones que el instrumen
 
 \subsubsection{Histéresis ($\sigma_{\textit{his ubp}}$)}
 
-Fenómeno que produce una diferencia en las lecturas de un instrumento de medición dependiendo de si el valor fue alcanzado en forma ascendente o descendente. Su distribución de probabilidad de prgien es rectangular de ancho completo. Se aplica uno de dos criterios:
+Fenómeno que produce una diferencia en las lecturas de un instrumento de medición dependiendo de si el valor fue alcanzado en forma ascendente o descendente. Su distribución de probabilidad de origen es rectangular de ancho completo. Se aplica uno de dos criterios:
 
-\textit{Criterio 1} (por defecto): Se asume el 0,2\% del rango ensayado, extremo pesimista del rango de histéresis típico de las termorresistencias industriales
+\textit{Criterio 1}: Se asume el 0,2\% del rango ensayado, extremo pesimista del rango de histéresis típico de las termorresistencias industriales
 
 \begin{equation}
-    \Delta_{\textit{his ubp}} = 0{,}002\,(T_{max} - T_{min}),
+    \Delta_{\textit{his ubp}} = \frac{0.2}{100}\,(T_{max} - T_{min}),
 \end{equation}
 
-donde $T_{max}$ y $T_{min}$ son el mayor y el menor punto de calibración ensayados\cite{DKD8.10}. Al obtenerse de información conocida y no de una serie de mediciones es una incertidumbre de tipo B.
+donde $T_{max}$ y $T_{min}$ son los puntos de calibración mayor y menor ensayados\cite{DKD8.10}. Al obtenerse de información conocida y no de una serie de mediciones es una incertidumbre de tipo B.
 
 % **[th-001 §4, p.6; DKD-R 5-1 §8.10, p.19; N&W §2.7.3 Ej. 2.10, p.61]**
 
-\textit{Criterio 2}: Se registran mediciones en el punto medio del rango durante las carreras ascendente y descendiente. La histéresis es la diferencia entre los promedios de ambas series\cite{DKD8.10}:
+\textit{Criterio 2}: Se registran mediciones en el punto medio del rango durante las carreras ascendente y descendente. La histéresis es la diferencia entre los promedios de ambas series\cite{DKD8.10}:
 
 \begin{equation}
     \Delta_{\textit{his ubp}} = \lvert \bar{T}_{asc} - \bar{T}_{desc} \rvert.
@@ -114,10 +113,10 @@ Al obtenerse del análisis estadístico de series de observaciones es de tipo A,
 Incertidumbre que resulta de haber obtenido la corrección del patrón (\cref{sec:correccion-patron}) mediante un ajuste por mínimos cuadrados \autocite{NW2.12,GUMH.3}. Se estima por la dispersión de los residuos:
 
 \begin{equation}
-    \Delta_{\textit{int ccr pat}} = \sqrt{\frac{\sum_{k=1}^{n}\left[ C_k - C(T_k) \right]^2}{n-2}},
+    \Delta_{\textit{int ccr pat}} = u_{\textit{pol ccr}} \ \ \ \text{con} \ \ \ u_{\textit{pol ccr}} = \sqrt{\frac{\sum_{k=1}^{n}\left[ C_k - C(T_k) \right]^2}{n_{fit}-2}},
 \end{equation}
 
-donde $C_k$ son las correcciones informadas en el certificado de calibración del patrón, $C(T_k)$ las predichas por la recta de ajuste evaluada en las mismas temperaturas, y $n$ el número de puntos del certificado. Se resta 2 por el número de parámetros del ajuste lineal. Proviene de la distribución normal y al calcularse a partir del análisis estadístico de una serie de mediciones es de tipo A, con $\nu = n-2$.
+donde $C_k$ son las correcciones informadas en el certificado de calibración del patrón, $C(T_k)$ las predichas por la recta de ajuste evaluada en las mismas temperaturas, y $n_{fit}$ el número de datos utilizados en el ajuste (provenientes del certificado de calibración). Se resta 2 por el número de parámetros del ajuste lineal. Proviene de la distribución normal y al calcularse a partir del análisis estadístico de una serie de mediciones es de tipo A, con $\nu = n_{fit}-2$.
 
 % **[GUM H.3.2, p.94 ec. (H.13f) y p.95; GUM G.3.3, p.76-77; N&W §2.12.1, p.85 ec. (2.73); INM §6.5.2, p.28 ec. (13); th-001 §6.1.1, p.17]**
 
@@ -126,22 +125,22 @@ donde $C_k$ son las correcciones informadas en el certificado de calibración de
 Incertidumbre de medición del patrón informada en su certificado de calibración, evaluada para la temperatura de referencia de la calibración de la UBP. Como el certificado del patrón informa la incertidumbre expandida en un número acotado de puntos, se ajusta un polinomio cuadrático a esos valores y se lo evalúa en $T_{ref}$ \cite{NW2.12}. Como se ajustan datos de incertidumbre expandida, se divide el resultado del ajuste por el factor de cobertura $k=2$ con el que fue informada para obtener la incertidumbre estándar \cite{GUM4.3}
 
 \begin{equation}
-    \Delta_{\textit{cal pat}} = \frac{a\,T_{ref}^2 + b\,T_{ref} + c}{2},
+    \Delta_{\textit{cal pat}} = \frac{a_{\textit{pol cal}}\cdot T_{ref}^2 + b_{\textit{pol cal}}\cdot T_{ref} + c_{\textit{pol cal}}}{2},
 \end{equation}
 
-donde $a$, $b$ y $c$ son los coeficientes del ajuste cuadrático de la incertidumbre expandida del certificado en función de la temperatura. Tiene distribución normal y al obtenerse de información conocida (los coeficientes del ajuste) y no de una serie de mediciones es de tipo B.
+donde $a_{\textit{pol cal}}$, $b_{\textit{pol cal}}$ y $c_{\textit{pol cal}}$ son los coeficientes del ajuste cuadrático de la incertidumbre expandida del certificado en función de la temperatura. Tiene distribución normal y al obtenerse de información conocida (los coeficientes del ajuste) y no de una serie de mediciones es de tipo B.
 
 % **[GUM 4.3.3, p.15; falta GUM F.2.3.1, p.68; N&W §2.11-2.12, p.77-85; th-001 §6.1.1, p.16; th-003 §6.1 2), p.23; INM Tabla 2, p.14]**
 
 \subsubsection{Incertidumbre por ajuste de la incertidumbre de calibración del patrón ($\sigma_{\textit{int cal pat}}$)}
 
-Análoga a la interpolación de la corrección, pero sobre el ajuste cuadrático de la componente anterior: es la incertidumbre debido a haber empleado el método de mínimos cuadrados para conocer la incertidumbre de calibración en puntos intermedios.
+Análoga a la interpolación de la corrección, pero sobre el ajuste cuadrático de la componente anterior: es la incertidumbre debida a haber empleado el método de mínimos cuadrados para conocer la incertidumbre de calibración en puntos intermedios.
 
 \begin{equation}
-    \Delta_{\textit{int cal pat}} = \frac{1}{2}\sqrt{\frac{\sum_{k=1}^{n}\left[ U_k - U(T_k) \right]^2}{n-3}},
+    \Delta_{\textit{int cal pat}} = \frac{u_{\textit{pol cal}}}{2} \ \ \ \text{con} \ \ \ u_{\textit{pol cal}} = \sqrt{\frac{\sum_{k=1}^{n}\left[ U_k - U(T_k) \right]^2}{n_{fit}-3}},
 \end{equation}
 
-donde $U_k$ son las incertidumbres expandidas informadas en el certificado y $U(T_k)$ las predichas por el ajuste. Se resta 3 por los tres parámetros del ajuste cuadrático, y se divide por 2 porque los datos ajustados son incertidumbres expandidas con $k=2$.
+donde $U_k$ son las incertidumbres expandidas informadas en el certificado y $U(T_k)$ las predichas por el ajuste. Se resta 3 a $n_{fit}$ por los tres parámetros del ajuste cuadrático, y se divide por 2 porque los datos ajustados son incertidumbres expandidas con $k=2$.
 
 % **[GUM H.3.2, p.94 ec. (H.13f); GUM G.3.3, p.76-77; N&W §2.12.1, p.85 ec. (2.73); INM §6.5.2, p.28 ec. (13)]**
 
@@ -150,10 +149,10 @@ donde $U_k$ son las incertidumbres expandidas informadas en el certificado y $U(
 Incertidumbre asociada a la variación de la lectura del patrón con el tiempo entre calibraciones sucesivas. Se estima como un tercio de la \textit{tolerancia del patrón}, según su especificación de fábrica, evaluada en la temperatura de referencia
 
 \begin{equation}
-    \Delta_{\textit{der pat}} = \frac{tol_{\textit{pat}}}{3} = \frac{1}{3}\left( \frac{tol_{p,\textit{pat}}\%}{100}\lvert T_{ref} \rvert + tol_{f,\textit{pat}} \right),
+    \Delta_{\textit{der pat}} = \frac{tol_{\textit{pat}}}{3} = \frac{1}{3}\left( \frac{tol_{\textit{\% pat}}}{100}\cdot\lvert T_{ref} \rvert + tol_{\textit{f pat}} \right),
 \end{equation}
 
-donde $tol_{p,\textit{pat}}$ y $tol_{f,\textit{pat}}$ son la tolerancia porcentual y la tolerancia fija especificadas por el fabricante del patrón. Tiene distribución rectangular y al obtenerse de una especificación es de tipo B.
+donde $tol_{\textit{\% pat}}$ y $tol_{\textit{f pat}}$ son la tolerancia porcentual y la tolerancia fija especificadas por el fabricante del patrón. Tiene distribución rectangular y al obtenerse de una especificación es de tipo B.
 
 No debe confundirse con la tolerancia de calibración de la \cref{sec:dictamen-conformidad}, que la solicita el cliente para cada punto y se evalúa en el punto de seteo $T_{set}$.
 
@@ -164,7 +163,7 @@ No debe confundirse con la tolerancia de calibración de la \cref{sec:dictamen-c
 Incertidumbre debida a la variación de la temperatura del medio de comparación en el tiempo durante la medición. Se obtiene evaluando la temperatura de referencia en la recta de ajuste de la inestabilidad de la caracterización del medio
 
 \begin{equation}
-    \Delta_{\textit{ine med}} = m_{ine}\,T_{ref} + b_{ine}.
+    \Delta_{\textit{ine med}} = m_{ine}\cdot T_{ref} + b_{ine}.
 \end{equation}
 
 donde $m_{ine}$ y $b_{ine}$ son los coeficientes de la recta de ajuste de inestabilidad correspondiente al rango que contiene al punto de calibración.
@@ -175,7 +174,7 @@ donde $m_{ine}$ y $b_{ine}$ son los coeficientes de la recta de ajuste de inesta
 Incertidumbre debida a la variación de la temperatura a lo largo de la profundidad de los orificios del inserto de un bloque seco. Se obtiene igual que la inestabilidad, evaluando la temperatura de referencia en la recta de ajuste correspondiente de la caracterización del medio
 
 \begin{equation}
-    \Delta_{\textit{ina med}} = m_{ina}\,T_{ref} + b_{ina},
+    \Delta_{\textit{ina med}} = m_{ina}\cdot T_{ref} + b_{ina},
 \end{equation}
 
 con $m_{ina}$ y $b_{ina}$ los coeficientes de la recta de ajuste de inhomogeneidad axial correspondiente al rango que contiene al punto de calibración.
@@ -187,7 +186,7 @@ con $m_{ina}$ y $b_{ina}$ los coeficientes de la recta de ajuste de inhomogeneid
 Incertidumbre debida a la variación de la temperatura entre los distintos orificios del inserto de un bloque seco. Se obtiene como
 
 \begin{equation}
-    \Delta_{\textit{inr med}} = m_{inr}\,T_{ref} + b_{inr}.
+    \Delta_{\textit{inr med}} = m_{inr}\cdot T_{ref} + b_{inr}.
 \end{equation}
 
 donde $m_{inr}$ y $b_{inr}$ son los coeficientes de la recta de ajuste de inhomogeneidad radial correspondiente al rango que contiene al punto de calibración.
@@ -199,7 +198,7 @@ donde $m_{inr}$ y $b_{inr}$ son los coeficientes de la recta de ajuste de inhomo
 Incertidumbre debida a la variación de la temperatura dentro del volumen o zona de trabajo caracterizada de un baño líquido o de una cámara de temperatura ambiental:
 
 \begin{equation}
-    \Delta_{\textit{inv med}} = m_{inv}\,T_{ref} + b_{inv}.
+    \Delta_{\textit{inv med}} = m_{inv}\cdot T_{ref} + b_{inv}.
 \end{equation}
 
 donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomogeneidad volumétrica correspondiente al rango que contiene al punto de calibración.
@@ -207,7 +206,7 @@ donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomo
 % **[INM §6.5.1.1, p.14 y Tabla 2, p.14; th-003 §6.1 2), p.24]**
 \begin{table}[H]
 \centering
-\caption{Tabla de componentes de incertidumbre para calibraciones de temperatura de contacto y ambiental. En violeta se pintan las componentes correspondientes a la UBP, en amarillo las relacionadas al patrón y en rojo las que provienen del medio.}\label{tab:my-table}
+\caption{Tabla de componentes de incertidumbre para calibraciones de temperatura de contacto y ambiental. En violeta se pintan las componentes correspondientes a la UBP, en amarillo las relacionadas con el patrón y en rojo las que provienen del medio.}\label{tab:my-table}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|Qc|Qc|Qc|Qc|Qc|Qc|Qc|Qc|}
 \hline
@@ -285,7 +284,7 @@ donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomo
 \rowcolor[HTML]{FFFFC7} 
 7 &
   $\sigma_{\textit{cal pat}}$ &
-  $\dfrac{a\cdot T_{ref}^2 + b\cdot T_{ref} + c}{2}$ &
+  $\dfrac{a_{\textit{pol cal}}\cdot T_{ref}^2 + b_{\textit{pol cal}}\cdot T_{ref} + c_{\textit{pol cal}}}{2}$ &
   Normal &
   1 &
   B &
@@ -303,7 +302,7 @@ donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomo
 \rowcolor[HTML]{FFFFC7} 
 9 &
   $\sigma_{\textit{der pat}}$ &
-  $\dfrac{1}{3}\left(\dfrac{tol_{\textit{\% pat}}}{100}\cdot \lvert T_{ref}\rvert + tol_{\textit{set pat}}\right)$ &
+  $\dfrac{1}{3}\left(\dfrac{tol_{\textit{\% pat}}}{100}\cdot \lvert T_{ref}\rvert + tol_{\textit{f pat}}\right)$ &
   \begin{tabular}[c]{@{}c@{}}Rectangular,\\ medio ancho\end{tabular} &
   $\sqrt{3}$ &
   B &
@@ -350,4 +349,4 @@ donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomo
 \end{table}
 
 
-(1): La componentes 11 y 12 aplican sólo calibraciones de temperatura de contacto realizadas en bloques secos, y la componente 13 a calibraciones de temperatura de contacto realizadas en baños líquidos o calibraciones de temperatura ambiental. Son mutuamente excluyentes.
+(1): Las componentes 11 y 12 aplican sólo a calibraciones de temperatura de contacto realizadas en bloques secos, y la componente 13 a calibraciones de temperatura de contacto realizadas en baños líquidos o calibraciones de temperatura ambiental. Son mutuamente excluyentes.
