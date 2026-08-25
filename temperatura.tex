@@ -58,7 +58,7 @@ Tomando $K \approx 1$ resulta $D_{eff} = D$ para baños líquidos, y $D_{eff} = 
     \delta_{\textit{imm pat}} = (T_{set} - T_{amb})\,e^{\frac{-L_{pat}}{\gamma D_{pat}}} \ \ \ \ \delta_{\textit{imm ubp}} = (T_{set} - T_{amb})\,e^{\frac{-L_{ubp}}{\gamma D_{ubp}}}
 \end{equation}
 
-Para el caso de mediciones en laboratorio el patrón siempre se inserta a la inmersión máxima posible del medio ($L_{pat}$ = longitud de inmersión máxima del medio). Para la UBP se sobreestima la corrección asumiento que está a la inmersión mínima posible en el medio ($L_{ubp}$ = longitud de inmersión mínima del medio) ya que las longitudes de los sensores de las distintas unidades bajo prueba pueden variar.
+Para el caso de mediciones en laboratorio el patrón siempre se inserta a la inmersión máxima posible del medio ($L_{pat}$ = longitud de inmersión máxima del medio). Para la UBP se sobreestima la corrección asumiendo que está a la inmersión mínima posible en el medio ($L_{ubp}$ = longitud de inmersión mínima del medio) ya que las longitudes de los sensores de las distintas unidades bajo prueba pueden variar.
 
 \subsection{Componentes de incertidumbre}\label{sec:componentes}
 
@@ -87,7 +87,7 @@ Incertidumbre debida a la mínima diferencia entre indicaciones que el instrumen
 
 \subsubsection{Histéresis ($\sigma_{\textit{his ubp}}$)}
 
-Fenómeno que produce una diferencia en las lecturas de un instrumento de medición dpendiendo de si el valor fue alcanzado en forma ascendente o descendente. Su distribución de probabilidad de prgien es rectangular de ancho completo. Se aplica uno de dos criterios:
+Fenómeno que produce una diferencia en las lecturas de un instrumento de medición dependiendo de si el valor fue alcanzado en forma ascendente o descendente. Su distribución de probabilidad de prgien es rectangular de ancho completo. Se aplica uno de dos criterios:
 
 \textit{Criterio 1} (por defecto): Se asume el 0,2\% del rango ensayado, extremo pesimista del rango de histéresis típico de las termorresistencias industriales
 
@@ -99,7 +99,7 @@ donde $T_{max}$ y $T_{min}$ son el mayor y el menor punto de calibración ensaya
 
 % **[th-001 §4, p.6; DKD-R 5-1 §8.10, p.19; N&W §2.7.3 Ej. 2.10, p.61]**
 
-\textit{Criterio 2}: Se registran mediciones en el punto medio del rango durante las carrera ascendente y descendiente. La histéresis es la diferencia entre los promedios de ambas series\cite{DKD8.10}:
+\textit{Criterio 2}: Se registran mediciones en el punto medio del rango durante las carreras ascendente y descendiente. La histéresis es la diferencia entre los promedios de ambas series\cite{DKD8.10}:
 
 \begin{equation}
     \Delta_{\textit{his ubp}} = \lvert \bar{T}_{asc} - \bar{T}_{desc} \rvert.
@@ -155,7 +155,7 @@ Incertidumbre asociada a la variación de la lectura del patrón con el tiempo e
 
 donde $tol_{p,\textit{pat}}$ y $tol_{f,\textit{pat}}$ son la tolerancia porcentual y la tolerancia fija especificadas por el fabricante del patrón. Tiene distribución rectangular y al obtenerse de una especificación es de tipo B.
 
-No debe confundirse con la tolerancia de calibración de la sec. 1.5.3, que la solicita el cliente para cada punto y se evalúa en el punto de seteo $T_{set}$.
+No debe confundirse con la tolerancia de calibración de la \cref{sec:dictamen-conformidad}, que la solicita el cliente para cada punto y se evalúa en el punto de seteo $T_{set}$.
 
 %**[th-001 §6.1.1, p.16-17; th-003 §6.1 2), p.23; INM §6.5.2, p.28]**
 
@@ -276,11 +276,11 @@ donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomo
 \rowcolor[HTML]{FFFFC7} 
 6 &
   $\sigma_{\textit{int ccr pat}}$ &
-  $\sqrt{\dfrac{\sum \textit{Residuos}^2}{n_{\textit{fit ccr}}-2}}$ &
+  $\sqrt{\dfrac{\sum \textit{Residuos}^2}{n_{\textit{fit pat}}-2}}$ &
   Normal &
   1 &
   A &
-  $n_{\textit{fit ccr}}-2$ &
+  $n_{\textit{fit pat}}-2$ &
   1 \\ \hline
 \rowcolor[HTML]{FFFFC7} 
 7 &
@@ -294,11 +294,11 @@ donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomo
 \rowcolor[HTML]{FFFFC7} 
 8 &
   $\sigma_{\textit{int cal pat}}$ &
-  $\dfrac{1}{2}\sqrt{\dfrac{\sum \textit{Residuos}^2}{n_{\textit{fit cal}}-3}}$ &
+  $\dfrac{1}{2}\sqrt{\dfrac{\sum \textit{Residuos}^2}{n_{\textit{fit pat}}-3}}$ &
   Normal &
   1 &
   A &
-  $n_{\textit{fit cal}}-3$ &
+  $n_{\textit{fit pat}}-3$ &
   1 \\ \hline
 \rowcolor[HTML]{FFFFC7} 
 9 &

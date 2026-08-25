@@ -110,7 +110,7 @@ El factor de cobertura requerido para asegurar un nivel de confianza $p$ en el i
     \nu_{eff} = \frac{u_c^4(y)}{\sum^N_{i=1}\left[\frac{u_i^4(y)}{\nu_i}\right]},
 \end{equation}
 
-con $u_i(y) = |c_i|u(x_i)$ \cite{GUMG.6.4}. El factor $k$ se obtiene como $t_p(\nu_{eff})$ el valor crítico para un nivel de confianza $p$ a dos colas obtenido directamente de la función de probabilidad acumulada inversa de la distribución t-Student de $\nu_{eff}$ grados de libertad. De esta forma
+con $u_i(y) = |c_i|\sigma(x_i)$ \cite{GUMG.6.4}. El factor $k$ se obtiene como $t_p(\nu_{eff})$ el valor crítico para un nivel de confianza $p$ a dos colas obtenido directamente de la función de probabilidad acumulada inversa de la distribución t-Student de $\nu_{eff}$ grados de libertad. De esta forma
 % **[GUM G.4.1]**
 
 \begin{equation}
@@ -128,7 +128,7 @@ Ya sea para validar los cálculos de estimación de la incertidumbre o para repo
 
 Para valorar y comparar los diferentes tipos de contribuciones se calcula el \textit{peso relativo porcentual} de cada componente sobre la incertidumbre combinada como
 \begin{equation}
-    \textit{Peso}\% = \left(\frac{c_i \cdot u(x_i)}{u_c}\right)^{2} \cdot 100.
+    \textit{Peso}\% = \left(\frac{c_i \cdot \sigma(x_i)}{u_c}\right)^{2} \cdot 100.
 \end{equation}
 % manual de calidad?
 \subsubsection{Condiciones ambientales}
@@ -143,9 +143,9 @@ y su error es la semiamplitud del intervalo,
 \end{equation}
 donde $x_i$ y $x_f$ son el valor observado de $x$ al iniciar y al terminar las mediciones. 
 
-\subsubsection{1.5.3. Tolerancia y dictamen de conformidad}
+\subsubsection{Tolerancia y dictamen de conformidad}\label{sec:dictamen-conformidad}
 
-El cliente puede solicitar De forma general la tolerancia para un determinado punto se calcula como
+El cliente puede solicitar una evaluación de la conformidad del resultado de la calibración respecto a una tolerancia específica, definida por alguna norma o criterio industrial. De forma general la tolerancia para un determinado punto se calcula como
 \begin{equation}
     tol = \frac{tol_p\%}{100}\cdot|x_{set}| + tol_f,
 \end{equation}
