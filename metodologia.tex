@@ -117,7 +117,7 @@ con $u_i(y) = |c_i|u(x_i)$ \cite{GUMG.6.4}. El factor $k$ se obtiene como $t_p(\
     U = k_p \cdot u_c(y) = t_p(\nu_{eff}) \cdot u_c(y).    
 \end{equation}
 
-La distribución de Welch-Satterthwaite tiende a la distribución normal cuando $\nu \longrightarrow \infty$. Para un nivel de confianza $p = 95\%$, si se obtiene $k_p<2$ se considera que la distribución de salida está bien aproximada por la distribución normal, de modo que en ese caso se elige en su lugar $k=2$ para reportar la incertidumbre expandida con un nivel aproximado de confianza del 95\% bajo la distribución normal \cite{GUMG.6.4}. 
+La distribución de t-Student tiende a la distribución normal cuando $\nu \longrightarrow \infty$. Para un nivel de confianza $p = 95\%$, si se obtiene $k_p<2$ se considera que la distribución de salida está bien aproximada por la distribución normal, de modo que en ese caso se elige en su lugar $k=2$ para reportar la incertidumbre expandida con un nivel aproximado de confianza del 95\% bajo la distribución normal \cite{GUMG.6.4}. 
 % **[GUM G.6.6]**
 
 \subsection{Otros resultados}
@@ -147,9 +147,9 @@ donde $x_i$ y $x_f$ son el valor observado de $x$ al iniciar y al terminar las m
 
 El cliente puede solicitar De forma general la tolerancia para un determinado punto se calcula como
 \begin{equation}
-    tol = \frac{tol_p\%}{100}\cdot|val| + tol_f,
+    tol = \frac{tol_p\%}{100}\cdot|x_{set}| + tol_f,
 \end{equation}
-donde $tol_p$ es la tolerancia porcentual y $tol_f$ la tolerancia fija requeridas para ese punto de calibración y $val$ es el valor de lectura.
+donde $tol_p$ es la tolerancia porcentual y $tol_f$ la tolerancia fija requeridas para ese punto de calibración y $x_{set}$ es el valor de seteo del punto.
 
 En caso de solicitarse, la evaluación de conformidad se puede realizar de acuerdo a dos reglas de decisión posibles. 
 

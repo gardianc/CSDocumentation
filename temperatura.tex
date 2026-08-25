@@ -85,7 +85,7 @@ Incertidumbre debida a la mínima diferencia entre indicaciones que el instrumen
 
 % **[GUM F.2.2.1, p.67; N&W §2.3.2, p.44 ec. (2.9)-(2.12)]**
 
-\textbf{Histéresis} ($\sigma_{\textit{his ubp}}$)
+\subsubsection{Histéresis ($\sigma_{\textit{his ubp}}$)}
 
 Fenómeno que produce una diferencia en las lecturas de un instrumento de medición dpendiendo de si el valor fue alcanzado en forma ascendente o descendente. Su distribución de probabilidad de prgien es rectangular de ancho completo. Se aplica uno de dos criterios:
 
@@ -109,7 +109,7 @@ Al obtenerse del análisis estadístico de series de observaciones es de tipo A,
 
 % **[N&W §2.7.3 Ej. 2.10, p.62-63; DKD-R 5-1 §8.10, p.18-19; INM Tabla 4, p.20]**
 
-\textbf{Incertidumbre por ajuste de la corrección del patrón} ($\sigma_{\textit{int ccr pat}}$)
+\subsubsection{Incertidumbre por ajuste de la corrección del patrón ($\sigma_{\textit{int ccr pat}}$)}
 
 Incertidumbre que resulta de haber obtenido la corrección del patrón (\cref{sec:correccion-patron}) mediante un ajuste por mínimos cuadrados \autocite{NW2.12,GUMH.3}. Se estima por la dispersión de los residuos:
 
@@ -121,7 +121,7 @@ donde $C_k$ son las correcciones informadas en el certificado de calibración de
 
 % **[GUM H.3.2, p.94 ec. (H.13f) y p.95; GUM G.3.3, p.76-77; N&W §2.12.1, p.85 ec. (2.73); INM §6.5.2, p.28 ec. (13); th-001 §6.1.1, p.17]**
 
-\textbf{Incertidumbre de calibración del patrón} ($\sigma_{\textit{cal pat}}$)
+\subsubsection{Incertidumbre de calibración del patrón ($\sigma_{\textit{cal pat}}$)}
 
 Incertidumbre de medición del patrón informada en su certificado de calibración, evaluada para la temperatura de referencia de la calibración de la UBP. Como el certificado del patrón informa la incertidumbre expandida en un número acotado de puntos, se ajusta un polinomio cuadrático a esos valores y se lo evalúa en $T_{ref}$ \cite{NW2.12}. Como se ajustan datos de incertidumbre expandida, se divide el resultado del ajuste por el factor de cobertura $k=2$ con el que fue informada para obtener la incertidumbre estándar \cite{GUM4.3}
 
@@ -133,7 +133,7 @@ donde $a$, $b$ y $c$ son los coeficientes del ajuste cuadrático de la incertidu
 
 % **[GUM 4.3.3, p.15; falta GUM F.2.3.1, p.68; N&W §2.11-2.12, p.77-85; th-001 §6.1.1, p.16; th-003 §6.1 2), p.23; INM Tabla 2, p.14]**
 
-\textbf{Incertidumbre por ajuste de la incertidumbre de calibración del patrón} ($\sigma_{\textit{int cal pat}}$)
+\subsubsection{Incertidumbre por ajuste de la incertidumbre de calibración del patrón ($\sigma_{\textit{int cal pat}}$)}
 
 Análoga a la interpolación de la corrección, pero sobre el ajuste cuadrático de la componente anterior: es la incertidumbre debido a haber empleado el método de mínimos cuadrados para conocer la incertidumbre de calibración en puntos intermedios.
 
@@ -145,7 +145,7 @@ donde $U_k$ son las incertidumbres expandidas informadas en el certificado y $U(
 
 % **[GUM H.3.2, p.94 ec. (H.13f); GUM G.3.3, p.76-77; N&W §2.12.1, p.85 ec. (2.73); INM §6.5.2, p.28 ec. (13)]**
 
-\textbf{Deriva del patrón} ($\sigma_{\textit{der pat}}$)
+\subsubsection{Deriva del patrón ($\sigma_{\textit{der pat}}$)}
 
 Incertidumbre asociada a la variación de la lectura del patrón con el tiempo entre calibraciones sucesivas. Se estima como un tercio de la \textit{tolerancia del patrón}, según su especificación de fábrica, evaluada en la temperatura de referencia
 
@@ -159,7 +159,7 @@ No debe confundirse con la tolerancia de calibración de la sec. 1.5.3, que la s
 
 %**[th-001 §6.1.1, p.16-17; th-003 §6.1 2), p.23; INM §6.5.2, p.28]**
 
-\textbf{Inestabilidad del medio} ($\sigma_{\textit{ine med}}$)
+\subsubsection{Inestabilidad del medio ($\sigma_{\textit{ine med}}$)}
 
 Incertidumbre debida a la variación de la temperatura del medio de comparación en el tiempo durante la medición. Se obtiene evaluando la temperatura de referencia en la recta de ajuste de la inestabilidad de la caracterización del medio
 
@@ -170,7 +170,7 @@ Incertidumbre debida a la variación de la temperatura del medio de comparación
 donde $m_{ine}$ y $b_{ine}$ son los coeficientes de la recta de ajuste de inestabilidad correspondiente al rango que contiene al punto de calibración.
 % **[INM §6.5.1.1, p.13 y Tabla 2, p.14; th-003 §6.1 2), p.23]**
 
-\textbf{Inhomogeneidad axial del medio} ($\sigma_{\textit{ina med}}$)
+\subsubsection{Inhomogeneidad axial del medio ($\sigma_{\textit{ina med}}$)}
 
 Incertidumbre debida a la variación de la temperatura a lo largo de la profundidad de los orificios del inserto de un bloque seco. Se obtiene igual que la inestabilidad, evaluando la temperatura de referencia en la recta de ajuste correspondiente de la caracterización del medio
 
@@ -182,7 +182,7 @@ con $m_{ina}$ y $b_{ina}$ los coeficientes de la recta de ajuste de inhomogeneid
 
 % **[INM §6.5.1.2, p.16-17 y Tabla 3, p.17]**
 
-\textbf{Inhomogeneidad radial del medio} ($\sigma_{\textit{inr med}}$)
+\subsubsection{Inhomogeneidad radial del medio ($\sigma_{\textit{inr med}}$)}
 
 Incertidumbre debida a la variación de la temperatura entre los distintos orificios del inserto de un bloque seco. Se obtiene como
 
@@ -194,7 +194,7 @@ donde $m_{inr}$ y $b_{inr}$ son los coeficientes de la recta de ajuste de inhomo
 
 % **[INM §6.5.1.2, p.16-17 y Tabla 3, p.17]**
 
-\textbf{Inhomogeneidad volumétrica del medio} ($\sigma_{\textit{inv med}}$)
+\subsubsection{Inhomogeneidad volumétrica del medio ($\sigma_{\textit{inv med}}$)}
 
 Incertidumbre debida a la variación de la temperatura dentro del volumen o zona de trabajo caracterizada de un baño líquido o de una cámara de temperatura ambiental:
 
@@ -205,7 +205,7 @@ Incertidumbre debida a la variación de la temperatura dentro del volumen o zona
 donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomogeneidad volumétrica correspondiente al rango que contiene al punto de calibración.
 
 % **[INM §6.5.1.1, p.14 y Tabla 2, p.14; th-003 §6.1 2), p.24]**
-\begin{table}[!htb]
+\begin{table}[H]
 \centering
 \caption{Tabla de componentes de incertidumbre para calibraciones de temperatura de contacto y ambiental. En violeta se pintan las componentes correspondientes a la UBP, en amarillo las relacionadas al patrón y en rojo las que provienen del medio.}\label{tab:my-table}
 \resizebox{\textwidth}{!}{%
@@ -276,11 +276,11 @@ donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomo
 \rowcolor[HTML]{FFFFC7} 
 6 &
   $\sigma_{\textit{int ccr pat}}$ &
-  $\sqrt{\dfrac{\sum \textit{Residuos}^2}{n-2}}$ &
+  $\sqrt{\dfrac{\sum \textit{Residuos}^2}{n_{\textit{fit ccr}}-2}}$ &
   Normal &
   1 &
   A &
-  $n-2$ &
+  $n_{\textit{fit ccr}}-2$ &
   1 \\ \hline
 \rowcolor[HTML]{FFFFC7} 
 7 &
@@ -294,11 +294,11 @@ donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomo
 \rowcolor[HTML]{FFFFC7} 
 8 &
   $\sigma_{\textit{int cal pat}}$ &
-  $\dfrac{1}{2}\sqrt{\dfrac{\sum \textit{Residuos}^2}{n-3}}$ &
+  $\dfrac{1}{2}\sqrt{\dfrac{\sum \textit{Residuos}^2}{n_{\textit{fit cal}}-3}}$ &
   Normal &
   1 &
   A &
-  $n-3$ &
+  $n_{\textit{fit cal}}-3$ &
   1 \\ \hline
 \rowcolor[HTML]{FFFFC7} 
 9 &
@@ -320,7 +320,7 @@ donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomo
   1 \\ \hline
 \rowcolor[HTML]{FFCCC9} 
 11 &
-  $\sigma_{\textit{ina med}}$ &
+  $\sigma_{\textit{ina med}}^{(1)}$ &
   $m_{ina}\cdot T_{ref} + b_{ina}$ &
   \begin{tabular}[c]{@{}c@{}}Rectangular,\\ medio ancho\end{tabular} &
   $\sqrt{3}$ &
@@ -329,7 +329,7 @@ donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomo
   1 \\ \hline
 \rowcolor[HTML]{FFCCC9} 
 12 &
-  $\sigma_{\textit{inr med}}$ &
+  $\sigma_{\textit{inr med}}^{(1)}$ &
   $m_{inr}\cdot T_{ref} + b_{inr}$ &
   \begin{tabular}[c]{@{}c@{}}Rectangular,\\ medio ancho\end{tabular} &
   $\sqrt{3}$ &
@@ -338,7 +338,7 @@ donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomo
   1 \\ \hline
 \rowcolor[HTML]{FFCCC9} 
 13 &
-  $\sigma_{\textit{inv med}}$ &
+  $\sigma_{\textit{inv med}}^{(1)}$ &
   $m_{inv}\cdot T_{ref} + b_{inv}$ &
   \begin{tabular}[c]{@{}c@{}}Rectangular,\\ medio ancho\end{tabular} &
   $\sqrt{3}$ &
@@ -348,3 +348,6 @@ donde $m_{inv}$ y $b_{inv}$ son los coeficientes de la recta de ajuste de inhomo
 \end{tabular}%
 }
 \end{table}
+
+
+(1): La componentes 11 y 12 aplican sólo calibraciones de temperatura de contacto realizadas en bloques secos, y la componente 13 a calibraciones de temperatura de contacto realizadas en baños líquidos o calibraciones de temperatura ambiental. Son mutuamente excluyentes.
