@@ -107,10 +107,12 @@ El factor de cobertura requerido para asegurar un nivel de confianza $p$ en el i
 
 
 \begin{equation}
-    \nu_{eff} = \frac{u_c^4(y)}{\sum^N_{i=1}\left[\frac{u_i^4(y)}{\nu_i}\right]},
+    \nu_{eff} = \frac{u_c^4(y)}{\sum^N_{i=1}\frac{u_i^4(y)}{\nu_i}},
 \end{equation}
 
-con $u_i(y) = |c_i|\sigma(x_i)$ \cite{GUMG.6.4}. El factor $k$ se obtiene como $t_p(\nu_{eff})$ el valor crítico para un nivel de confianza $p$ a dos colas obtenido directamente de la función de probabilidad acumulada inversa de la distribución t-Student de $\nu_{eff}$ grados de libertad. De esta forma
+con $u_i(y) = |c_i|\sigma(x_i)$ \cite{GUMG.6.4}. El factor $k$ se obtiene como $t_p(\nu_{eff})$ el valor crítico para un nivel de confianza $p$ a dos colas obtenido directamente de la función de probabilidad acumulada inversa de la distribución t-Student de $\nu_{eff}$ grados de libertad. 
+
+De esta forma
 % **[GUM G.4.1]**
 
 \begin{equation}
